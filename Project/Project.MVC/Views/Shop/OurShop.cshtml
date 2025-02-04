@@ -1,0 +1,69 @@
+﻿@model ICollection<GetAllProductDto>
+<section class="product__area-four">
+    <div class="container">
+        <div class="row gutter-20 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+            @foreach (GetAllProductDto item in Model)
+            {
+                <div class="col">
+                    <div class="product__item">
+                        <div class="product__thumb">
+                            <a>
+                                <img src="~/uploads/products/@item.CoverImageUrl" alt="img" style="width: 100%; height: auto;">
+                            </a>
+                            <div class="product__action">
+                                <a href="product-details.html"><i class="flaticon-love"></i></a>
+                                <a href="product-details.html"><i class="flaticon-loupe"></i></a>
+                                <a href="product-details.html"><i class="flaticon-exchange"></i></a>
+                            </div>
+                            <div class="sale-wrap">
+                                <span>New</span>
+                            </div>
+                            <div class="product__add-cart">
+                                <a href="product-details.html" class="btn"><i class="flaticon-shopping-bag"></i>Add To Cart</a>
+                            </div>
+                        </div>
+                        <div class="product__content">
+                            <div class="product__reviews">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(2 Reviews)</span>
+                            </div>
+                            <h4 class="title"><a href="product-details.html">@item.Title</a></h4>
+                            @if (item.NewPrice > 0)
+                            {
+                                <h3 class="price">@item.NewPrice <del>@item.OldPrice</del></h3>
+                            }
+                            @if (item.NewPrice == 0)
+                            {
+                                <h3 class="price">@item.OldPrice</h3>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <nav class="pagination__wrap mt-50">
+                <ul class="list-wrap">
+                    <li class="link-arrow"><a href="#"><img src="~/assets/img/icon/pagination_icon01.svg" alt="" class="injectable"></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="courses.html">2</a></li>
+                    <li><a href="courses.html">3</a></li>
+                    <li><a href="courses.html">4</a></li>
+                    <li class="link-arrow"><a href="#"><img src="~/assets/img/icon/pagination_icon02.svg" alt="" class="injectable"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+<style>
+    .product__thumb img {
+        width: 100%; /* Şəkil eni 100% olacaq */
+        height: 200px; /* Şəkil hündürlüyü sabit olaraq təyin ediləcək */
+        object-fit: cover; /* Şəkilin keyfiyyətini qoruyaraq ölçüyə uyğunlaşdırılmasını təmin edir */
+    }
+</style>

@@ -1,0 +1,44 @@
+﻿@model Department
+<!-- Begin Page Content -->
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Item Details</h6>
+        </div>
+        <div class="card-body">
+            <p>Id:@Model.Id </p>
+            <p>Create time:@Model.CreatedTime </p>
+            <p>Name:@Model.Name </p>
+        </div>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">CoverImage</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">NewPrice</th>
+            <th scope="col">OldPrice</th>
+            <th scope="col">CategoryId</th>
+            <th scope="col">CreateTime</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Product item in Model.Products)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td> <img width="50" src="~/uploads/products/@item.CoverImageUrl"> </td>
+                <td>@item.Title</td>
+                <td>@item.Description</td>
+                <td>@item.NewPrice</td>
+                <td>@item.OldPrice</td>
+                <td>@item.DepartmentId</td>
+                <td>@item.CreatedTime</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

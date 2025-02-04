@@ -1,0 +1,1577 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\css\\sb-admin-2.css",
+      "PackagePath": "staticwebassets\\admin\\css\\sb-admin-2.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\css\\sb-admin-2.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\sb-admin-2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\img\\undraw_posting_photo.svg",
+      "PackagePath": "staticwebassets\\admin\\img\\undraw_posting_photo.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\img\\undraw_profile.svg",
+      "PackagePath": "staticwebassets\\admin\\img\\undraw_profile.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\js\\sb-admin-2.js",
+      "PackagePath": "staticwebassets\\admin\\js\\sb-admin-2.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\js\\sb-admin-2.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\sb-admin-2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\jquery-easing\\jquery.easing.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-easing\\jquery.easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\admin\\vendor\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\css\\aos.css",
+      "PackagePath": "staticwebassets\\assets\\css\\aos.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\css\\default.css",
+      "PackagePath": "staticwebassets\\assets\\css\\default.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\css\\flaticon_pet_care.css",
+      "PackagePath": "staticwebassets\\assets\\css\\flaticon_pet_care.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\css\\fontawesome-all.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\fontawesome-all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\assets\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\assets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\css\\main.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css.map"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\css\\odometer.css",
+      "PackagePath": "staticwebassets\\assets\\css\\odometer.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\assets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\css\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\flaticon_pet_care.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flaticon_pet_care.eot"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\flaticon_pet_care.scss",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flaticon_pet_care.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\flaticon_pet_care.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flaticon_pet_care.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\flaticon_pet_care.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flaticon_pet_care.ttf"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\flaticon_pet_care.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flaticon_pet_care.woff"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\fonts\\flaticon_pet_care.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flaticon_pet_care.woff2"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\banner_bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\banner_img01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_img01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\banner_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\banner_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\banner_shape03.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_shape03.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\banner_shape04.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_shape04.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\banner_title_img01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_title_img01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\banner_title_img02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_title_img02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\h2_banner_bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\h2_banner_bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\h2_banner_img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\h2_banner_img.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\h2_banner_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\h2_banner_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\h2_banner_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\h2_banner_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\h3_banner_bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\h3_banner_bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\h3_banner_img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\h3_banner_img.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\h3_banner_img01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\h3_banner_img01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\h3_banner_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\h3_banner_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\h3_banner_img_shape.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\h3_banner_img_shape.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\h3_banner_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\h3_banner_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\h3_banner_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\h3_banner_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\h3_banner_slide01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\h3_banner_slide01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\h3_banner_title_img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\h3_banner_title_img.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\banner\\sale.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\sale.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\bg\\counter_bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\counter_bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\bg\\shop_bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\shop_bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\avatar.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_details_img.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_details_img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_details_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_details_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_img01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_img01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_img03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_img03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_img04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_img04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_img05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_img05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_img06.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_img06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_img_shape.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_img_shape.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_post01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_post01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_post02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_post02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_post03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_post03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_post_mask.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_post_mask.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\blog_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\comment01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\comment01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\comment02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\comment02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\h2_blog_post01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\h2_blog_post01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\h2_blog_post02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\h2_blog_post02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\h2_blog_post03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\h2_blog_post03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\h4_blog_post01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\h4_blog_post01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\h4_blog_post02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\h4_blog_post02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\h4_blog_post03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\h4_blog_post03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\h4_blog_post04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\h4_blog_post04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\h4_blog_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\h4_blog_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\h4_blog_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\h4_blog_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\rc_post01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\rc_post01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\rc_post02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\rc_post02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\rc_post03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\rc_post03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\blog\\rc_post04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\rc_post04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\brand\\brand_img01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\brand_img01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\brand\\brand_img02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\brand_img02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\brand\\brand_img03.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\brand_img03.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\brand\\brand_img04.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\brand_img04.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\brand\\brand_img05.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\brand_img05.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\brand\\brand_img06.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\brand_img06.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\brand\\brand_img07.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\brand_img07.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\brand\\h2_brand_img01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\h2_brand_img01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\brand\\h2_brand_img02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\h2_brand_img02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\brand\\h2_brand_img03.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\h2_brand_img03.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\brand\\h2_brand_img04.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\h2_brand_img04.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\brand\\h2_brand_img05.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\h2_brand_img05.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\brand\\h2_brand_img06.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\h2_brand_img06.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\brand\\h2_brand_img07.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\h2_brand_img07.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\category\\category_img01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category_img01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\category\\category_img02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category_img02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\category\\category_img03.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category_img03.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\category\\category_img04.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category_img04.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\category\\category_img05.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category_img05.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\category\\category_img06.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category_img06.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\gallery\\gallery_img01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery_img01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\gallery\\gallery_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\gallery\\gallery_img03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery_img03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\gallery\\gallery_img04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery_img04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\gallery\\gallery_img05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery_img05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\gallery\\gallery_img06.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery_img06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\gallery\\gallery_img07.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery_img07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\gallery\\gallery_img08.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery_img08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\gallery\\gallery_img09.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery_img09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\check_icon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\check_icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\check_icon02.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\check_icon02.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\features_icon01.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\features_icon01.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\features_icon02.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\features_icon02.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\features_icon03.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\features_icon03.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\features_icon04.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\features_icon04.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\pagination_icon01.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\pagination_icon01.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\pagination_icon02.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\pagination_icon02.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\pet_icon01.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\pet_icon01.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\pet_icon02.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\pet_icon02.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\popup_icon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\popup_icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\quote.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\quote.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\quote02.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\quote02.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\right_arrow.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\right_arrow.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\right_arrow02.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\right_arrow02.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\right_arrow03.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\right_arrow03.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\right_arrow04.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\right_arrow04.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\star.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\star.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\why_icon01.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\why_icon01.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\why_icon02.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\why_icon02.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\icon\\why_icon03.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\why_icon03.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\about_img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\about_img.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\about_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\about_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\about_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\about_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\about_shape03.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\about_shape03.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\about_video_shape.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\about_video_shape.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\adoption_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\adoption_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\adoption_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\adoption_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\advertisement.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\advertisement.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\author_01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\author_01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\author_02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\author_02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\author_03.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\author_03.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\author_04.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\author_04.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\author_mask.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\author_mask.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\author_sign.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\author_sign.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\bg.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\bg.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\breadcrumb_img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\breadcrumb_img.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\breadcrumb_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\breadcrumb_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\breadcrumb_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\breadcrumb_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\choose_img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\choose_img.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\choose_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\choose_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\choose_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\choose_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\counter_img.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\counter_img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\counter_img_shape.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\counter_img_shape.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\counter_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\counter_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\counter_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\counter_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\cta_img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\cta_img.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\cta_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\cta_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\cta_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\cta_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\cta_shape03.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\cta_shape03.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\discover_img01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\discover_img01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\discover_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\discover_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\discover_img03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\discover_img03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\discover_img04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\discover_img04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\discover_img05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\discover_img05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\discover_shape.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\discover_shape.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\error_img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\error_img.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\experience_shape.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\experience_shape.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\features_img01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\features_img01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\features_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\features_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\footer_newsletter_shape.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\footer_newsletter_shape.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\footer_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\footer_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\footer_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\footer_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h2_about_img01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h2_about_img01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h2_about_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h2_about_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h2_about_img_shape.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h2_about_img_shape.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h2_about_mask_img.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h2_about_mask_img.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h2_about_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h2_about_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h2_about_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h2_about_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h2_counter_shape.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h2_counter_shape.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h2_testimonial_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h2_testimonial_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h2_testimonial_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h2_testimonial_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h2_why_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h2_why_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h2_why_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h2_why_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h3_about_img01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h3_about_img01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h3_about_img02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h3_about_img02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h3_about_shape.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h3_about_shape.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h3_testi_author01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h3_testi_author01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h3_testimonial_author.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h3_testimonial_author.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h3_testimonial_img.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h3_testimonial_img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h3_testimonial_mask_img.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h3_testimonial_mask_img.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\h3_testimonial_shape.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\h3_testimonial_shape.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\inner_about_img01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\inner_about_img01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\inner_about_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\inner_about_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\inner_about_shape.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\inner_about_shape.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\introducing_img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\introducing_img.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\introducing_img_shape.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\introducing_img_shape.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\introducing_shape.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\introducing_shape.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\marquee_icon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\marquee_icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\mask-img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\mask-img.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\registration_img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\registration_img.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\registration_shape.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\registration_shape.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\review_shape.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\review_shape.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\services_icon_shape.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\services_icon_shape.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\services_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\services_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\services_shape01.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\services_shape01.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\services_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\services_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\services_shape02.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\services_shape02.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\services_shape03.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\services_shape03.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\testi_author01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\testi_author01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\testimonial_img.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\testimonial_img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\testimonial_img_shape.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\testimonial_img_shape.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\testimonial_mask_img.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\testimonial_mask_img.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\testimonial_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\testimonial_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\testimonial_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\testimonial_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\testimonial_shape03.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\testimonial_shape03.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\title_shape.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\title_shape.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\why_item_shape01.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\why_item_shape01.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\why_item_shape02.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\why_item_shape02.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\why_shape01.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\why_shape01.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\why_shape02.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\why_shape02.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\why_shape03.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\why_shape03.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\why_shape04.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\why_shape04.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\images\\why_we_are_img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\images\\why_we_are_img.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\instagram\\instagram_img01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\instagram\\instagram_img01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\instagram\\instagram_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\instagram\\instagram_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\instagram\\instagram_img03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\instagram\\instagram_img03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\instagram\\instagram_img04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\instagram\\instagram_img04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\instagram\\instagram_img05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\instagram\\instagram_img05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\instagram\\instagram_img_mask.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\instagram\\instagram_img_mask.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\logo\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\logo\\preloader.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\preloader.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\logo\\w_logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\w_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\card.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\card.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\h_products_img01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\h_products_img01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\h_products_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\h_products_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\latest_products_img01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\latest_products_img01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\latest_products_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\latest_products_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\latest_products_img03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\latest_products_img03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\latest_products_img04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\latest_products_img04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\latest_products_img05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\latest_products_img05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\latest_products_img06.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\latest_products_img06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img06.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img07.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img08.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img09.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img13.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img14.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_img15.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_img15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_shape01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_shape01.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\products\\products_shape02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\products_shape02.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\shop\\pet_details01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\shop\\pet_details01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\shop\\pet_details02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\shop\\pet_details02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\shop\\pet_details03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\shop\\pet_details03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\shop\\pet_details04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\shop\\pet_details04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\shop\\shop_img01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\shop\\shop_img01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\shop\\shop_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\shop\\shop_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\shop\\shop_img03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\shop\\shop_img03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\shop\\shop_img04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\shop\\shop_img04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\shop\\shop_img05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\shop\\shop_img05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\shop\\shop_img06.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\shop\\shop_img06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\shop\\shop_img07.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\shop\\shop_img07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\shop\\shop_img08.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\shop\\shop_img08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\shop\\shop_img09.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\shop\\shop_img09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\shop\\shop_mask_img.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\shop\\shop_mask_img.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\team\\h2_team_shape.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\h2_team_shape.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\team\\team_details.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_details.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\team\\team_img01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_img01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\team\\team_img02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_img02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\team\\team_img03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_img03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\team\\team_img04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_img04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\team\\team_img05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_img05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\team\\team_img06.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_img06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\team\\team_img07.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_img07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\team\\team_img08.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_img08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\team\\team_img_shape01.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_img_shape01.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\team\\team_img_shape02.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_img_shape02.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\team\\team_mask_img.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_mask_img.svg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\img\\team\\team_shape.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_shape.png"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\js\\ajax-form.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ajax-form.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\js\\aos.js",
+      "PackagePath": "staticwebassets\\assets\\js\\aos.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\js\\jquery.appear.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.appear.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\js\\jquery.countdown.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.countdown.min.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\js\\jquery.odometer.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.odometer.min.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\js\\svg-inject.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\svg-inject.min.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\js\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\js\\vendor\\jquery-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-3.6.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\mail.php",
+      "PackagePath": "staticwebassets\\assets\\mail.php"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\components\\_animation.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_animation.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\components\\_background.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_background.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\components\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\components\\_buttons.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\components\\_mobile-menu.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_mobile-menu.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\components\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_offcanvas.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\components\\_preloader.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_preloader.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\components\\_scroll-top.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_scroll-top.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\components\\_search.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_search.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\components\\_section-title.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_section-title.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\components\\_select2.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_select2.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\components\\_theme.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_404.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_404.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_about.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_about.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_animal.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_animal.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_banner.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_banner.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_blog.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_blog.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_brand.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_brand.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_category.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_category.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_choose.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_choose.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_contact.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_cta.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_cta.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_discover.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_discover.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_fact.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_fact.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_faq.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_faq.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_features.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_features.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_footer.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_gallery.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_gallery.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_header.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_instagram.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_instagram.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_introducing.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_introducing.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_marquee.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_marquee.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_pricing.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_pricing.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_product.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_product.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_registration.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_registration.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_services.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_services.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_slider.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_slider.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_team.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_team.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_testimonial.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_testimonial.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\layout\\_why-we-are.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_why-we-are.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\main.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\main.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\utils\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\utils\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\utils\\_colors.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\utils\\_colors.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\utils\\_index.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\utils\\_index.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\utils\\_mixins.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\utils\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\utils\\_root.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\utils\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\assets\\scss\\utils\\_typography.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\utils\\_typography.scss"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\0022ab02-25e4-4ce6-85f2-9f47cadc6094R (4).jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\0022ab02-25e4-4ce6-85f2-9f47cadc6094R (4).jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\08c389d4-7c23-4060-9011-264e951175fcR (4).jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\08c389d4-7c23-4060-9011-264e951175fcR (4).jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\37cc7b66-de1b-4954-af5b-ebfe9d3f94b2R (2).jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\37cc7b66-de1b-4954-af5b-ebfe9d3f94b2R (2).jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\6c75acd1-e9eb-4b57-a513-4e86dcec6bc7R.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\6c75acd1-e9eb-4b57-a513-4e86dcec6bc7R.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\88119f78-b15d-4075-a2af-3588b81e463aR.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\88119f78-b15d-4075-a2af-3588b81e463aR.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Project.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Project.MVC.props",
+      "PackagePath": "build\\Project.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Project.MVC.props",
+      "PackagePath": "buildMultiTargeting\\Project.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Project.MVC.props",
+      "PackagePath": "buildTransitive\\Project.MVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
