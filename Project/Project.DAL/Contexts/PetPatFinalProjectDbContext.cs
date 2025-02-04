@@ -1,4 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Project.Core.Model;
 using System;
 using System.Collections.Generic;
@@ -8,16 +11,18 @@ using System.Threading.Tasks;
 
 namespace Project.DAL.Contexts;
 
-public class PetPatFinalProjectDbContext : DbContext
+public class PetPatFinalProjectDbContext : IdentityDbContext<AppUser>
+
 {
     public DbSet<Product>Products { get; set; }
     public DbSet<Department> Departments { get; set; }
 
+    public PetPatFinalProjectDbContext(DbContextOptions options) : base(options)
+    {
+    }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(PetPatFinalProjectDbContext).Assembly);
-    }
-    public PetPatFinalProjectDbContext(DbContextOptions options) : base(options)
-    {
+        base.OnModelCreating(modelBuilder);
     }
 }

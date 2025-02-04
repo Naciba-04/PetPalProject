@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Project.BL.Services.Abstraction;
+using Project.Core.Model;
+using Project.DAL.Repository.Abstaction;
 
 namespace Project.MVC.Controllers;
 
-public class ShopController(IProductService _service) : Controller
+public class ShopController(IProductService _service,IGenericRepository<Product> _repository) : Controller
 {
     public async Task <IActionResult> OurShop()
     {
@@ -11,8 +13,9 @@ public class ShopController(IProductService _service) : Controller
         var result=await _service.GetAllAsync();
         return View(result);
     }
-    public IActionResult ShopDetails()
+    public async Task <IActionResult> ShopDetails(int id)
     {
-        return View();
+        var result = await _repository.GetByIdAsync(id);
+        return View(result);
     }
 }

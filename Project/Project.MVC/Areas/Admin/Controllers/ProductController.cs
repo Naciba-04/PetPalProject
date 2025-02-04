@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Project.BL.DTOs.ProductDTO;
 using Project.BL.Exceptions;
@@ -7,6 +8,7 @@ using Project.BL.Services.Implementation;
 
 namespace Project.MVC.Areas.Admin.Controllers;
 [Area("Admin")]
+[Authorize(Roles = "Admin")]
 public class ProductController(IProductService _productService,IDepartmentService _departmentService) : Controller
 {
     public async Task<IActionResult> Index()

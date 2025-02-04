@@ -10,3 +10,4 @@ C:\Users\resul\Desktop\PetPalProject\Project\Project.Core\obj\Debug\net8.0\Proje
 C:\Users\resul\Desktop\PetPalProject\Project\Project.Core\obj\Debug\net8.0\refint\Project.Core.dll
 C:\Users\resul\Desktop\PetPalProject\Project\Project.Core\obj\Debug\net8.0\Project.Core.pdb
 C:\Users\resul\Desktop\PetPalProject\Project\Project.Core\obj\Debug\net8.0\ref\Project.Core.dll
+C:\Users\resul\Desktop\PetPalProject\Project\Project.Core\obj\Debug\net8.0\Project.Core.csproj.AssemblyReference.cache

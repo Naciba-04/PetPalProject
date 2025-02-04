@@ -9,7 +9,9 @@ using Project.BL.Services.Abstraction;
 using Project.Core.Model;
 using Project.DAL.Repository.Abstaction;
 using Project.DAL.Repository.Implementation;
-using static Project.BL.DTOs.ProductDTO.UpdateProductDto;
+using Microsoft.AspNetCore.Identity;
+using Project.BL.EmailServices.Abstraction;
+using Project.BL.EmailServices.Implementation;
 
 namespace Project.MVC
 {
@@ -18,6 +20,17 @@ namespace Project.MVC
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+            {
+                opt.User.RequireUniqueEmail = true;
+                opt.Password.RequireNonAlphanumeric = false;
+                opt.Password.RequireDigit = false;
+                opt.Password.RequiredLength = 6;
+                opt.Password.RequireLowercase = false;
+                opt.Password.RequireUppercase = false;
+                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(1);
+            }).AddDefaultTokenProviders().AddEntityFrameworkStores<PetPatFinalProjectDbContext>();
+
             builder.Services.AddDbContext<PetPatFinalProjectDbContext>(opt =>
             {
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("MSSql"));
@@ -28,9 +41,10 @@ namespace Project.MVC
 			builder.Services.AddAutoMapper(typeof(ProductProfile).Assembly);
 			builder.Services.AddScoped<IGenericRepository<Department>, GenericRepository<Department>>();
 			builder.Services.AddScoped<IGenericRepository<Product>, GenericRepository<Product>>();
-			builder.Services.AddScoped<IProductService, FoodService>();
+			builder.Services.AddScoped<IProductService, ProductService>();
 			builder.Services.AddScoped<IDepartmentService, DepartmentService>();
-			builder.Services.AddValidatorsFromAssemblyContaining<CreateProductDtoValidation>();
+            builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.AddValidatorsFromAssemblyContaining<CreateProductDtoValidation>();
 
             builder.Services.AddFluentValidationClientsideAdapters();
 			builder.Services.AddFluentValidationAutoValidation(); 

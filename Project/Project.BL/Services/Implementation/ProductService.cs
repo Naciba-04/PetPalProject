@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace Project.BL.Services.Implementation;
 
-public class FoodService(IGenericRepository<Product> _repository, IGenericRepository<Department> _departmentrepository,IMapper _mapper,IWebHostEnvironment _env) : IProductService
+public class ProductService(IGenericRepository<Product> _repository, IGenericRepository<Department> _departmentrepository,IMapper _mapper,IWebHostEnvironment _env) : IProductService
 {
     public async Task CreateAsync(CreateProductDto entity)
     {

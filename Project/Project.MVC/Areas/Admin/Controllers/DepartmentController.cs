@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Project.BL.DTOs.DepartmentDTO;
 using Project.BL.Exceptions;
 using Project.BL.Services.Abstraction;
 
 namespace Project.MVC.Areas.Admin.Controllers;
 [Area("Admin")]
+[Authorize(Roles = "Admin")]
 public class DepartmentController(IDepartmentService _departmentService) : Controller
 {
     public async Task<IActionResult> Index()

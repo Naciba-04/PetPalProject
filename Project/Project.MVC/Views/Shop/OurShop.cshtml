@@ -4,11 +4,12 @@
         <div class="row gutter-20 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
             @foreach (GetAllProductDto item in Model)
             {
-                <div class="col">
+                <div class="col" >
                     <div class="product__item">
                         <div class="product__thumb">
-                            <a>
+                            <a asp-controller="Shop" asp-action="ShopDetails" asp-route-id="@item.Id">
                                 <img src="~/uploads/products/@item.CoverImageUrl" alt="img" style="width: 100%; height: auto;">
+
                             </a>
                             <div class="product__action">
                                 <a href="product-details.html"><i class="flaticon-love"></i></a>
@@ -19,10 +20,10 @@
                                 <span>New</span>
                             </div>
                             <div class="product__add-cart">
-                                <a href="product-details.html" class="btn"><i class="flaticon-shopping-bag"></i>Add To Cart</a>
+                                <a class="btn" ><i class="flaticon-shopping-bag"></i>Add To Cart</a>
                             </div>
                         </div>
-                        <div class="product__content">
+                        <div class="product__content"> 
                             <div class="product__reviews">
                                 <div class="rating">
                                     <i class="fas fa-star"></i>
@@ -36,11 +37,11 @@
                             <h4 class="title"><a href="product-details.html">@item.Title</a></h4>
                             @if (item.NewPrice > 0)
                             {
-                                <h3 class="price">@item.NewPrice <del>@item.OldPrice</del></h3>
+                                <h3 class="price">@item.NewPrice AZN <del>@item.OldPrice </del></h3>
                             }
-                            @if (item.NewPrice == 0)
+                            else 
                             {
-                                <h3 class="price">@item.OldPrice</h3>
+                                <h3 class="price">@item.OldPrice AZN </h3>
                             }
                         </div>
                     </div>
