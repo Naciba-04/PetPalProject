@@ -1,84 +1,60 @@
 ﻿@using Project.Core.Model
 @model Product
-
 <!-- product-details-area -->
 <section class="product__details-area">
     <div class="container">
         <div class="row">
-            @foreach (Product item in Model)
-            {
-                <div class="col-lg-6">
-                    <div class="product__details-images-wrap">
-                        <div class="tab-content" id="myTabContent">
+            <div class="col-lg-6">
+                <div class="product__details-images-wrap">
+                    <div class="tab-content" id="myTabContent">
 
-                            <div class="tab-pane show active" id="itemOne-tab-pane" role="tabpanel" aria-labelledby="itemOne-tab" tabindex="0">
-                                <a href="~/uploads/products/@item.CoverImageUrl class="popup-image">
-                                    <img src="~/uploads/products/@item.CoverImageUrl" alt="img">
-                                </a>
-                            </div>
-
-                            <div class="tab-pane" id="itemTwo-tab-pane" role="tabpanel" aria-labelledby="itemTwo-tab" tabindex="0">
-                                <a href="~/uploads/products/@item.CoverImageUrl" class="popup-image">
-                                    <img src="~/uploads/products/@item.CoverImageUrl" alt="img">
-                                </a>
-                            </div>
-
+                        <div class="tab-pane show active" id="itemOne-tab-pane" role="tabpanel" aria-labelledby="itemOne-tab" tabindex="0">
+                            <a href="~/uploads/products/@Model.CoverImageUrl class="popup-image">
+                                <img src="~/uploads/products/@Model.CoverImageUrl" alt="img">
+                            </a>
                         </div>
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="itemOne-tab" data-bs-toggle="tab" data-bs-target="#itemOne-tab-pane" type="button" role="tab" aria-controls="itemOne-tab-pane" aria-selected="true">
-                                    <img src="~/uploads/products/@item.CoverImageUrl" alt="img">
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="itemTwo-tab" data-bs-toggle="tab" data-bs-target="#itemTwo-tab-pane" type="button" role="tab" aria-controls="itemTwo-tab-pane" aria-selected="false">
-                                    <img src="~/uploads/products/@item.CoverImageUrl" alt="img">
-                                </button>
-                            </li>
 
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="product__details-content">
-                        <span class="tag">@item.DepartmentName</span>
-                        <h2 class="title">@item.Title</h2>
-                        <div class="product__reviews-wrap">
-                            <div class="product__reviews">
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <span>(2 Reviews)</span>
-                            </div>
-
+                        <div class="tab-pane" id="itemTwo-tab-pane" role="tabpanel" aria-labelledby="itemTwo-tab" tabindex="0">
+                            <a href="~/uploads/products/@Model.CoverImageUrl" class="popup-image">
+                                <img src="~/uploads/products/08c389d4-7c23-4060-9011-264e951175fcR (4).jpg" alt="img">
+                            </a>
                         </div>
-                        @if (item.NewPrice > 0)
-                        {
-                            <h4 class="price">@item.NewPrice AZN</h4>
-                        }
-                        else
-                        {
-                            <h4 class="price">@item.OldPrice AZN</h4>
-                        }
-
-                        <p>@item.Description</p>
-
-                        <div class="product__details-qty">
-                            <div class="cart-plus-minus">
-                                <input type="text" value="1">
-                            </div>
-                            <a href="product-details.html" class="add-btn">Add To Cart</a>
-                        </div>
-                        <a href="product-details.html" class="buy-btn">Buy it Now</a>
-
 
                     </div>
+
                 </div>
-            }
+            </div>
+            <div class="col-lg-6">
+                <div class="product__details-content">
+                    @* <span class="tag">@Model.DepartmentName</span> *@
+                    <h2 class="title">@Model.Title</h2>
+                    <div class="product__reviews-wrap">
+                        
+
+                    </div>
+                    @if (Model.NewPrice > 0)
+                    {
+                        <h4 class="price">@Model.NewPrice AZN</h4>
+                    }
+                    else
+                    {
+                        <h4 class="price">@Model.OldPrice AZN</h4>
+                    }
+
+                    <p>@Model.Description</p>
+
+                    <div class="product__details-qty">
+                        <div class="cart-plus-minus">
+                            <input type="text" value="1">
+                        </div>
+                        <a href="product-details.html" class="add-btn">Add To Cart</a>
+                    </div>
+                    <a href="product-details.html" class="buy-btn">Buy it Now</a>
+
+
+                </div>
+            </div>
+
         </div>
 
 

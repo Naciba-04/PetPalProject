@@ -47,7 +47,11 @@ public class ProductService(IGenericRepository<Product> _repository, IGenericRep
         var res = await _repository.GetByIdAsync(id);
         return _mapper.Map<GetAllProductDto>(res);
     }
-
+    public async Task<Product> GetByIdProductAsync(int id)
+    {
+        var res = await _repository.GetByIdAsync(id);
+        return _mapper.Map<Product>(res);
+    }
     public async Task<UpdateProductDto> GetByIdForUpdateAsync(int id)
     {
         var res = await _repository.GetByIdAsync(id);

@@ -16,6 +16,7 @@ public class PetPatFinalProjectDbContext : IdentityDbContext<AppUser>
 {
     public DbSet<Product>Products { get; set; }
     public DbSet<Department> Departments { get; set; }
+    public DbSet<Rating> Ratings { get; set; }
 
     public PetPatFinalProjectDbContext(DbContextOptions options) : base(options)
     {

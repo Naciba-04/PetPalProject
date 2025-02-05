@@ -60,7 +60,7 @@
                                     <span class="text-danger" asp-validation-for="RePassword"></span>
                                 </div>
                             </div>
-
+                            <p class="text-danger text-center">@Html.ValidationMessage("CustomError")</p>
                             <button type="submit" class="btn btn-primary btn-user btn-block">
                                 Register
                             </button>

@@ -12,6 +12,7 @@ namespace Project.BL.Services.Abstraction
     {
         Task<ICollection<GetAllProductDto>> GetAllAsync();
         Task<GetAllProductDto> GetByIdAsync(int id);
+        Task<Product> GetByIdProductAsync(int id);
         Task<UpdateProductDto> GetByIdForUpdateAsync(int id);
         Task<Product> GetByIdWithChildrenAsync(int id);
         Task CreateAsync(CreateProductDto entity);

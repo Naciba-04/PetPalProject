@@ -82,21 +82,14 @@
                                 </div>
                                 <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
                                     <ul class="navigation">
-                                        <li class="active menu-item-has-children">
-                                            <a href="#">Home</a>
-                                            <ul class="sub-menu">
-                                                <li class="active"><a href="index.html">Pet Care & Veterinary</a></li>
-                                                <li><a href="index-2.html">Pet Breed</a></li>
-                                                <li><a href="index-3.html">Pet Adopt</a></li>
-                                                <li><a href="index-4.html">pet Woocommerce</a></li>
-                                            </ul>
+                                        <li >
+                                            <a asp-controller="Home" asp-action="Index">Home</a>
                                         </li>
                                         <li><a asp-controller="About" asp-action="Index">About</a></li>
                                         <li class="menu-item-has-children">
                                             <a href="#">Shop</a>
                                             <ul class="sub-menu">
                                                 <li><a asp-controller="Shop" asp-action="OurShop">Our Shop</a></li>
-                                                <li><a asp-controller="Shop" asp-action="ShopDetails">Shop Details</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children">
@@ -104,7 +97,7 @@
                                             <ul class="sub-menu">
                                                 <li><a href="animal.html">All Pets</a></li>
                                                 <li><a href="animal-details.html">Pet Details</a></li>
-                                                <li><a href="gallery.html">Gallery</a></li>
+                                                <li><a asp-controller="Pages" asp-action="CommentDetails">Comment Details</a></li>
                                                 <li><a href="faq.html">Faq Page</a></li>
                                                 <li><a href="pricing.html">Pricing Page</a></li>
                                                 <li><a href="reservation.html">Reservation Page</a></li>
@@ -115,34 +108,17 @@
                                                 <li><a href="error.html">404 Error Page</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">contacts</a></li>
+                                        <li><a asp-controller="Rating" asp-action="SubmitRating" class="nav-item nav-link">Rating&Comment</a></li>
                                     </ul>
                                 </div>
                                 <div class="tgmenu__action d-none d-md-block">
                                     <ul class="list-wrap">
-                                        <li class="header-search">
-                                            <a href="javascript:void(0)" class="search-open-btn">
-                                                <i class="flaticon-loupe"></i>
-                                            </a>
-                                        </li>
                                         <li class="header-cart">
                                             <a href="javascript:void(0)">
                                                 <i class="flaticon-shopping-bag"></i>
                                                 <span>0</span>
                                             </a>
                                         </li>
-                                        <li class="offCanvas-menu">
-                                            <a href="javascript:void(0)" class="menu-tigger">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
-                                                    <rect width="9" height="2" rx="1" fill="currentcolor" />
-                                                    <rect x="11" width="15" height="2" rx="1" fill="currentcolor" />
-                                                    <rect y="14" width="26" height="2" rx="1" fill="currentcolor" />
-                                                    <rect y="7" width="16" height="2" rx="1" fill="currentcolor" />
-                                                    <rect x="17" y="7" width="9" height="2" rx="1" fill="currentcolor" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="header-btn"><a href="contact.html" class="btn"><i class="flaticon-calendar-1"></i>Appointment</a></li>
                                     </ul>
                                 </div>
                                 <div class="mobile-nav-toggler">

@@ -38,18 +38,25 @@ namespace Project.MVC
             });
 
             builder.Services.AddControllersWithViews();
-			builder.Services.AddAutoMapper(typeof(ProductProfile).Assembly);
-			builder.Services.AddScoped<IGenericRepository<Department>, GenericRepository<Department>>();
-			builder.Services.AddScoped<IGenericRepository<Product>, GenericRepository<Product>>();
-			builder.Services.AddScoped<IProductService, ProductService>();
-			builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+            builder.Services.AddAutoMapper(typeof(ProductProfile).Assembly);
+            builder.Services.AddScoped<IGenericRepository<Department>, GenericRepository<Department>>();
+            builder.Services.AddScoped<IGenericRepository<Product>, GenericRepository<Product>>();
+            builder.Services.AddScoped<IGenericRepository<Rating>, GenericRepository<Rating>>();
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<IDepartmentService, DepartmentService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.AddScoped<IRatingService, RatingService>();
             builder.Services.AddValidatorsFromAssemblyContaining<CreateProductDtoValidation>();
 
             builder.Services.AddFluentValidationClientsideAdapters();
-			builder.Services.AddFluentValidationAutoValidation(); 
+            builder.Services.AddFluentValidationAutoValidation();
+            builder.Services.AddAuthentication()
+        .AddCookie(options =>
+        {
+            options.AccessDeniedPath = "/Account/AccessDenied/";
+        });
 
-			var app = builder.Build();
+            var app = builder.Build();
 
             if (!app.Environment.IsDevelopment())
             {

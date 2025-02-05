@@ -1,0 +1,104 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şərh Bölməsi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f4f8;
+        }
+
+        .container {
+            max-width: 450px;
+            width: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background: white;
+            text-align: center;
+            position: relative;
+            top: -50px; /* Burada elementi bir az yuxarı qaldırdım */
+        }
+
+        .message {
+            background-color: #e3f2fd; /* Açıq mavi fon */
+            color: #1565c0; /* Tünd mavi yazı */
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 60px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #90caf9;
+            line-height: 1.5; /* Sətirlər arası məsafə */
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1565c0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+            button:hover {
+                background-color: #0d47a1;
+            }
+
+        #comment-section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="message" class="message">
+            <span style="text-align: center; display: block; width: 100%;">Zəhmət olmasa qeydiyyatdan keçib, sonra yorum yazın.</span>
+        </div>
+
+        <div id="comment-section">
+            <textarea placeholder="Şərhinizi yazın..." rows="4"></textarea>
+            <button>Göndər</button>
+        </div>
+    </div>
+
+    <script>
+        // İstifadəçinin qeydiyyatdan keçdiyini yoxlayan dəyişən
+        let isRegistered = false; // Burada true etsəniz, şərh hissəsi açılacaq
+
+        if (isRegistered) {
+            document.getElementById('message').style.display = 'none';
+            document.getElementById('comment-section').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

@@ -55,6 +55,10 @@ public class AccountController(UserManager<AppUser> _userManager, SignInManager<
     {
         return View();
     }
+    public IActionResult AccessDenied()
+    {
+        return View();
+    }
     [HttpPost]
     public async Task<IActionResult> Login(LoginDto dto, string? returnUrl = null)
     {
