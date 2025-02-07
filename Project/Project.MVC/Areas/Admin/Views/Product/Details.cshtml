@@ -3,20 +3,20 @@
 <div class="container">
 	<div class="card shadow mb-4">
 		<div class="card-header py-3">
-			<h6 class="m-0 font-weight-bold text-primary">Foods Details</h6>
+			<h6 class="m-0 font-weight-bold text-primary">Products Details</h6>
 		</div>
 		<div class="card-body">
 			<p>Id: @Model.Id</p>
 			<p>Title: @Model.Title</p>
 			<p>Description: @Model.Description</p>
-			<p>Price: @Model.OldPrice</p>
-			<p>Price: @Model.NewPrice</p>
-			<p>CategoryName: @Model.Department.Name</p>
-			<p>CategoryId: @Model.Department.Id</p>
-			<p>Create time: @Model.CreatedTime</p>
+			<p>OldPrice: @Model.OldPrice</p>
+			<p>NewPrice: @Model.NewPrice</p>
+			<p>DepartmentName: @Model.Department.Name</p>
+			<p>DepartmentId: @Model.Department.Id</p>
+			<p>Create Time: @Model.CreatedTime</p>
 			@if (Model.UpdatedTime is not null)
 			{
-				<p>Update time: @Model.UpdatedTime</p>
+				<p>Update Time: @Model.UpdatedTime</p>
 			}
 
 		</div>

@@ -15,7 +15,7 @@ public class ShopController(IProductService _service,IGenericRepository<Product>
     }
     public async Task<IActionResult> ShopDetails(int id)
     {
-        var result = await _service.GetByIdProductAsync(id);
+        var result = await _service.GetByIdAsync(id);
         return View(result);
     }
 }
