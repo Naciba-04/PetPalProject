@@ -251,6 +251,60 @@ namespace Project.DAL.Migrations
                     b.ToTable("Departments");
                 });
 
+            modelBuilder.Entity("Project.Core.Model.PetService", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<DateTime?>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PetServices");
+                });
+
+            modelBuilder.Entity("Project.Core.Model.PetType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<DateTime?>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PetTypes");
+                });
+
             modelBuilder.Entity("Project.Core.Model.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -339,6 +393,62 @@ namespace Project.DAL.Migrations
                     b.ToTable("Ratings");
                 });
 
+            modelBuilder.Entity("Project.Core.Model.Reservation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("date");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<TimeSpan>("EndTime")
+                        .HasColumnType("time");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("PetServiceId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PetTypeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ReservStatus")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(0);
+
+                    b.Property<TimeSpan>("StartTime")
+                        .HasColumnType("time");
+
+                    b.Property<DateTime?>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PetServiceId");
+
+                    b.HasIndex("PetTypeId");
+
+                    b.ToTable("Reservations");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -412,6 +522,25 @@ namespace Project.DAL.Migrations
                     b.Navigation("AppUser");
                 });
 
+            modelBuilder.Entity("Project.Core.Model.Reservation", b =>
+                {
+                    b.HasOne("Project.Core.Model.PetService", "PetService")
+                        .WithMany("Reservations")
+                        .HasForeignKey("PetServiceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Project.Core.Model.PetType", "PetType")
+                        .WithMany("Reservations")
+                        .HasForeignKey("PetTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PetService");
+
+                    b.Navigation("PetType");
+                });
+
             modelBuilder.Entity("Project.Core.Model.AppUser", b =>
                 {
                     b.Navigation("Ratings");
@@ -420,6 +549,16 @@ namespace Project.DAL.Migrations
             modelBuilder.Entity("Project.Core.Model.Department", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("Project.Core.Model.PetService", b =>
+                {
+                    b.Navigation("Reservations");
+                });
+
+            modelBuilder.Entity("Project.Core.Model.PetType", b =>
+                {
+                    b.Navigation("Reservations");
                 });
 #pragma warning restore 612, 618
         }

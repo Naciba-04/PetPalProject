@@ -80,7 +80,7 @@ public class DepartmentController(IDepartmentService _departmentService) : Contr
     {
         try
         {
-            return View(await _departmentService.GetByIdFoodAsync(id));
+            return View(await _departmentService.GetByIdProductAsync(id));
         }
         catch (BaseException ex)
         {

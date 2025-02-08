@@ -56,7 +56,7 @@ public class DepartmentService(IGenericRepository<Department> _repository,IMappe
         await _repository.UpdateAsync(mapper);
     }
 
-    public async Task<Department> GetByIdFoodAsync(int id)
+    public async Task<Department> GetByIdProductAsync(int id)
     {
         var res = await _repository.GetByIdAsync(id, "Products");
         if (res == null)

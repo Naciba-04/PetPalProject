@@ -14,7 +14,7 @@ public interface IDepartmentService
     Task<ICollection<GetAllDepartmentDto>> GetDepartmentListItemsAsync();
     Task<UpdateDepartmentDto> GetByIdForUpdateAsync(int id);
     Task<GetAllDepartmentDto> GetByIdAsync(int id);
-    Task<Department> GetByIdFoodAsync(int id);
+    Task<Department> GetByIdProductAsync(int id);
     Task CreateAsync(CreateDepartmentDto entity);
     Task UpdateAsync(UpdateDepartmentDto entity);
     Task DeleteAsync(int id);

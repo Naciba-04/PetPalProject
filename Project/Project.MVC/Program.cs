@@ -42,10 +42,14 @@ namespace Project.MVC
             builder.Services.AddScoped<IGenericRepository<Department>, GenericRepository<Department>>();
             builder.Services.AddScoped<IGenericRepository<Product>, GenericRepository<Product>>();
             builder.Services.AddScoped<IGenericRepository<Rating>, GenericRepository<Rating>>();
+            builder.Services.AddScoped<IGenericRepository<PetType>, GenericRepository<PetType>>();
+            builder.Services.AddScoped<IGenericRepository<PetService>, GenericRepository<PetService>>();
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IDepartmentService, DepartmentService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
             builder.Services.AddScoped<IRatingService, RatingService>();
+            builder.Services.AddScoped<IPetTypeService, PetTypeService>();
+            builder.Services.AddScoped<IPetServiceService, PetServiceService>();
             builder.Services.AddValidatorsFromAssemblyContaining<CreateProductDtoValidation>();
 
             builder.Services.AddFluentValidationClientsideAdapters();

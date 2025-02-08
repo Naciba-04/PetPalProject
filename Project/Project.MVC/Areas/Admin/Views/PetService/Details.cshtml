@@ -1,0 +1,44 @@
+﻿@model PetService
+<!-- Begin Page Content -->
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">PetService Details</h6>
+        </div>
+        <div class="card-body">
+            <p>Id:@Model.Id </p>
+            <p>Create Time:@Model.CreatedTime </p>
+            <p>Name:@Model.Name </p>
+        </div>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">FullName</th>
+            <th scope="col">Date</th>
+            <th scope="col">StartTime</th>
+            <th scope="col">EndTime</th>
+            <th scope="col">Email</th>
+            <th scope="col">PerServiceId</th>
+            <th scope="col">CreateTime</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Reservation item in Model.Reservations)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.FullName</td>
+                <td>@item.Date</td>
+                <td>@item.StartTime</td>
+                <td>@item.EndTime</td>
+                <td>@item.Email</td>
+                <td>@item.PetServiceId</td>
+                <td>@item.CreatedTime</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
