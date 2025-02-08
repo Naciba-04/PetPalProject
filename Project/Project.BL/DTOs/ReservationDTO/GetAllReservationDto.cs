@@ -22,3 +22,4 @@ public class GetAllReservationDto
     public string Email { get; set; }
     public ReservStatus ReservStatus { get; set; } 
 }
+

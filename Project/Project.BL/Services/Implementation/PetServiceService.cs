@@ -29,7 +29,7 @@ public class PetServiceService(IGenericRepository<PetService> _repository, IMapp
 
     public async Task<ICollection<GetAllPetServiceDto>> GetAllAsync()
     {
-        var res = await _repository.GetAllAsync();
+        var res = await _repository.GetAllAsync("Reservation");
         return _mapper.Map<ICollection<GetAllPetServiceDto>>(res);
     }
 

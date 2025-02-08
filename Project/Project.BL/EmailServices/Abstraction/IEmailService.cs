@@ -10,4 +10,7 @@ public interface IEmailService
 {
     void SendWelcome(string toUser);
     void SendConfirmEmail(string toUser, string confirmUrl);
+    void ReservMessage(string toUser);
+    void SendAcceptedEmail(string toUser);
+    void SendRejectedEmail(string toUser);
 }

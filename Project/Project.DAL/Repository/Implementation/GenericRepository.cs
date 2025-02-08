@@ -16,8 +16,11 @@ public class GenericRepository<T>(PetPatFinalProjectDbContext _context) : IGener
 
     public async Task CreateAsync(T entity)
     {
+        
         await Table.AddAsync(entity);
+        entity.CreatedTime = DateTime.Now;
         await _context.SaveChangesAsync();
+        
     }
 
     public async Task DeleteAsync(T entity)

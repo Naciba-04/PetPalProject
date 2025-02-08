@@ -18,5 +18,7 @@ public class ReservationProfile:Profile
             .ForMember(dest => dest.PetServiceName, options => options.MapFrom(src => src.PetService.Name))
             .ForMember(dest => dest.PetTypeName, options => options.MapFrom(src => src.PetType.Name));
         CreateMap<UpdateReservationDto, Reservation>().ReverseMap();
+        CreateMap<CreateReservationDto, Reservation>().ReverseMap();
+
     }
 }
