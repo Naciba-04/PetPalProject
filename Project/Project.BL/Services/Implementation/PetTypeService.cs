@@ -29,7 +29,7 @@ public class PetTypeService(IGenericRepository<PetType> _repository, IMapper _ma
 
     public async Task<ICollection<GetAllPetTypeDto>> GetAllAsync()
     {
-        var res = await _repository.GetAllAsync("Reservation");
+        var res = await _repository.GetAllAsync();
         return _mapper.Map<ICollection<GetAllPetTypeDto>>(res);
     }
 

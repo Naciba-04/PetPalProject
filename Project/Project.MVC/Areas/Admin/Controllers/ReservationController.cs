@@ -66,6 +66,8 @@ public class ReservationController : Controller
         {
             _emailService.SendRejectedEmail(reservation.Email);
         }
+       
+
 
         return RedirectToAction("Index");
     }

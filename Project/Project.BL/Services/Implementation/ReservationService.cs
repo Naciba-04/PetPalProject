@@ -36,7 +36,7 @@ public class ReservationService : IReservationService
 
     public async Task<Reservation?> GetReservationByIdAsync(int id)
     {
-        return await _reservationRepository.GetByIdAsync(id);
+        return await _reservationRepository.GetByIdAsync(id, "PetType", "PetService");
     }
 
     public async Task UpdateReservationStatusAsync(UpdateReservationDto updateDto)

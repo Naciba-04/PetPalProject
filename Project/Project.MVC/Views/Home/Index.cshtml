@@ -1,10 +1,4 @@
-﻿@using Project.BL.DTOs.ReservationDTO
-@model CreateReservationDto
-@{
-    SelectList categories = ViewData["PetTypeName"] as SelectList;
-    SelectList categories1 = ViewData["PetServiceName"] as SelectList;
-
-}
+﻿
 @{
     ViewData["Title"] = "Index";
 }
@@ -733,79 +727,7 @@
         </div>
     </section>
     <!-- testimonial-area-end -->
-    <!-- registration-area -->
-    <section class="registration__area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="registration__inner-wrap">
-                        <h2 class="title">Schedule a visit today!</h2>
-                        <div class="shape">
-                            <img src="~/assets/img/images/registration_shape.svg" alt="">
-                        </div>
-                        <form action="#">
-                            <div class="row gutter-15">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="form-grp">
-                                        <label asp-for="FullName">FullName</label>
-                                        <input asp-for="FullName">
-                                        <span asp-validation-for="FullName" class="text-danger"></span>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <select class="custom-select" asp-items="categories" asp-for="PetTypeId">
-                                        <option selected>Select Category Pettype</option>
-                                    </select>
-                                    <span class="text-danger" asp-validation-for="PetTypeId"></span>
-                                </div>
-                                <div class="mb-3">
-                                    <select class="custom-select" asp-items="categories1" asp-for="PetServiceId">
-                                        <option selected>Select Category Petservice</option>
-                                    </select>
-                                    <span class="text-danger" asp-validation-for="PetServiceId"></span>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="form-grp">
-                                        <label asp-for="Date">Date</label>
-                                        <input asp-for="Date">
-                                        <span asp-validation-for="Date" class="text-danger"></span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="form-grp">
-                                        <label asp-for="Email">Email</label>
-                                        <input asp-for="Email">
-                                        <span asp-validation-for="FullName" class="text-danger"></span>
-
-                                    </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="form-grp">
-                                            <label asp-for="StartTime">StartTime</label>
-                                        <input asp-for="StartTime">
-                                            <span asp-validation-for="StartTime" class="text-danger"></span>
-                                        <i class="flaticon-three-o-clock-clock"></i>
-                                    </div>
-                                </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="form-grp">
-                                            <label asp-for="EndTime">EndTime</label>
-                                            <input asp-for="EndTime">
-                                            <span asp-validation-for="EndTime" class="text-danger"></span>
-                                            <i class="flaticon-three-o-clock-clock"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="submit__btn text-center mt-25">
-                                <button type="submit" class="btn">Start a Reservation <img src="~/assets/img/icon/right_arrow.svg" alt="" class="injectable"></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- registration-area-end -->
+    
     <!-- blog-post-area -->
     <section class="blog__post-area">
         <div class="container">

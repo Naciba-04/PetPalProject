@@ -109,6 +109,7 @@
                                             </ul>
                                         </li>
                                         <li><a asp-controller="Rating" asp-action="SubmitRating" class="nav-item nav-link">Rating&Comment</a></li>
+                                        <li><a asp-controller="Reservation" asp-action="Create">Reservation</a></li>
                                     </ul>
                                 </div>
                                 <div class="tgmenu__action d-none d-md-block">
@@ -121,28 +122,28 @@
                                         </li>
                                     </ul>
                                 </div>
+
+                                <!-- Boşluq üçün yeni div əlavə edirik -->
+                                <div style="width: 20px;"></div>
+
                                 <div class="mobile-nav-toggler">
                                     <i class="flaticon-layout"></i>
                                 </div>
-                                <div>
 
+                                <!-- Register və Logout düymələrini flex konteynerinə salırıq -->
+                                <div style="display: flex; gap: 20px;">
                                     @if (!User.Identity.IsAuthenticated)
                                     {
-                                        <td>
-                                            <a asp-controller="Account" asp-action="Register">
-                                                <i class="fa-solid fa-user"></i>
-                                            </a>
-                                        </td>
+                                        <a asp-controller="Account" asp-action="Register">
+                                            <i class="fa-solid fa-user"></i>
+                                        </a>
                                     }
                                     @if (User.Identity.IsAuthenticated)
                                     {
-                                        <td>
-                                            <a asp-controller="Account" asp-action="Logout">
-                                                <i class="fa-solid fa-right-to-bracket"></i>
-                                            </a>
-                                        </td>
+                                        <a asp-controller="Account" asp-action="Logout">
+                                            <i class="fa-solid fa-right-to-bracket"></i>
+                                        </a>
                                     }
-
                                 </div>
                             </nav>
                         </div>
@@ -388,3 +389,4 @@
 </body>
 
 </html>
+

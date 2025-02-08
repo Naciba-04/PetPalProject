@@ -1,0 +1,88 @@
+﻿@using Project.BL.DTOs.ReservationDTO
+@model CreateReservationDto
+
+@{
+    SelectList categories = ViewData["PetTypeName"] as SelectList;
+    SelectList categories1 = ViewData["PetServiceName"] as SelectList;
+}
+
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg rounded-4 border-0 col-lg-5 col-md-8 col-11 p-4">
+        <div class="card-header bg-primary text-white text-center rounded-top-4">
+            <h4 class="m-0">🦴 Reservation</h4>
+        </div>
+        <div class="card-body">
+            <form method="POST">
+                <div class="mb-3">
+                    <label class="form-label fw-bold" asp-for="FullName"></label>
+                    <input class="form-control rounded-3" asp-for="FullName" placeholder="Enter full name" />
+                    <span class="text-danger" asp-validation-for="FullName"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold" asp-for="Email"></label>
+                    <input class="form-control rounded-3" asp-for="Email" placeholder="Enter email" />
+                    <span class="text-danger" asp-validation-for="Email"></span>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold" asp-for="Date"></label>
+                        <input type="date" class="form-control rounded-3" asp-for="Date" />
+                        <span class="text-danger" asp-validation-for="Date"></span>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label fw-bold" asp-for="StartTime"></label>
+                        <input type="time" class="form-control rounded-3" asp-for="StartTime" />
+                        <span class="text-danger" asp-validation-for="StartTime"></span>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label fw-bold" asp-for="EndTime"></label>
+                        <input type="time" class="form-control rounded-3" asp-for="EndTime" />
+                        <span class="text-danger" asp-validation-for="EndTime"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold">Select Category</label>
+                        <select class="form-select rounded-3" asp-items="categories" asp-for="PetTypeId">
+                            <option selected>Select Pet Category</option>
+                        </select>
+                        <span class="text-danger" asp-validation-for="PetTypeId"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold">Select Pet Service</label>
+                        <select class="form-select rounded-3" asp-items="categories1" asp-for="PetServiceId">
+                            <option selected>Select Pet Service</option>
+                        </select>
+                        <span class="text-danger" asp-validation-for="PetServiceId"></span>
+                    </div>
+                </div>
+
+                <p class="text-danger text-center">@Html.ValidationMessage("CustomError")</p>
+                <button type="submit" class="btn btn-primary w-100 fw-bold py-2 rounded-3">💾 Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Custom CSS -->
+<style>
+    body {
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    }
+
+    .card {
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control, .form-select {
+        border: 2px solid #dee2e6;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+        }
+</style>

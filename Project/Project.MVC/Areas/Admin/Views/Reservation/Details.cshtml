@@ -1,4 +1,4 @@
-﻿@model Project.BL.DTOs.ReservationDTO.GetAllReservationDto
+﻿@model Reservation
 
 @{
     ViewData["Title"] = "Rezervasiya Detalları";
@@ -17,11 +17,11 @@
     </tr>
     <tr>
         <th>Heyvan Növü:</th>
-        <td>@Model.PetTypeName</td>
+        <td>@Model.PetType.Name</td>
     </tr>
     <tr>
         <th>Xidmət:</th>
-        <td>@Model.PetServiceName</td>
+        <td>@Model.PetService.Name</td>
     </tr>
     <tr>
         <th>Tarix:</th>
@@ -39,29 +39,5 @@
         <th>Email:</th>
         <td>@Model.Email</td>
     </tr>
-    <tr>
-        <th>Status:</th>
-        <td>
-            <span class="badge @(Model.ReservStatus == Project.Core.Enums.ReservStatus.Pending ? "bg-warning" :
-                                 Model.ReservStatus == Project.Core.Enums.ReservStatus.Accepted ? "bg-success" : "bg-danger")">
-                @Model.ReservStatus
-            </span>
-        </td>
-    </tr>
-</table>
-
-@if (Model.ReservStatus == Project.Core.Enums.ReservStatus.Pending)
-{
-    <form method="post" asp-action="UpdateStatus" asp-controller="Reservation">
-        <input type="hidden" name="id" value="@Model.Id" />
-        <label for="newStatus">Yeni Status:</label>
-        <select name="newStatus" class="form-select" required>
-            <option value="Accepted">Qəbul Et</option>
-            <option value="Rejected">Ləğv Et</option>
-        </select>
-        <br />
-        <button type="submit" class="btn btn-primary">Statusu Yenilə</button>
-    </form>
-}
-
+   
 <a href="@Url.Action("Index", "Reservation")" class="btn btn-secondary mt-3">Geri</a>
