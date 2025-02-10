@@ -18,6 +18,17 @@
 			{
 				<p>Update Time: @Model.UpdatedTime</p>
 			}
+			<p><strong>Product Image:</strong></p>
+			<div class="animal-image">
+				@if (!string.IsNullOrEmpty(Model.CoverImageUrl))
+				{
+					<img src="~/uploads/products/@Model.CoverImageUrl" alt="Product Image" style="max-width: 300px; height: auto; display: block; margin: 0 auto;" />
+				}
+				else
+				{
+					<p>No image available</p>
+				}
+			</div>
 
 		</div>
 	</div>

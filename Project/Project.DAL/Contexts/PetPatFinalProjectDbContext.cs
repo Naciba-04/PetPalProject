@@ -20,6 +20,7 @@ public class PetPatFinalProjectDbContext : IdentityDbContext<AppUser>
     public DbSet<Reservation> Reservations { get; set; }
     public DbSet<PetType> PetTypes { get; set; }
     public DbSet<PetService> PetServices { get; set; }
+    public DbSet<Animal> Animals { get; set; }
 
 
     public PetPatFinalProjectDbContext(DbContextOptions options) : base(options)

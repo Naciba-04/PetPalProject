@@ -1537,6 +1537,10 @@
       "PackagePath": "staticwebassets\\assets\\scss\\utils\\_typography.scss"
     },
     {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\animals\\1cd7aa38-f8fd-46be-a077-44e3491bfd8eWhiteCat (7).jpg",
+      "PackagePath": "staticwebassets\\uploads\\animals\\1cd7aa38-f8fd-46be-a077-44e3491bfd8eWhiteCat (7).jpg"
+    },
+    {
       "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\08c389d4-7c23-4060-9011-264e951175fcR (4).jpg",
       "PackagePath": "staticwebassets\\uploads\\products\\08c389d4-7c23-4060-9011-264e951175fcR (4).jpg"
     },

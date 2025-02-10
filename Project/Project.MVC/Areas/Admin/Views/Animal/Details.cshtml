@@ -1,0 +1,37 @@
+﻿@model Animal
+<!-- Begin Page Content -->
+<div class="container">
+	<div class="card shadow mb-4">
+		<div class="card-header py-3">
+			<h6 class="m-0 font-weight-bold text-primary">Animal Details</h6>
+		</div>
+		<div class="card-body">
+			<p>Id: @Model.Id</p>
+			<p>Title: @Model.Title</p>
+			<p>Description: @Model.Description</p>
+			<p>Weight: @Model.Weight</p>
+			<p>Color: @Model.Color</p>
+			<p>Gender: @Model.Gender</p>
+			<p>Create Time: @Model.CreatedTime</p>
+
+			
+			@if (Model.UpdatedTime is not null)
+			{
+				<p>Update Time: @Model.UpdatedTime</p>
+			}
+			<p><strong>Cover Image:</strong></p>
+			<div class="animal-image">
+				@if (!string.IsNullOrEmpty(Model.CoverImageUrl))
+				{
+					<img src="~/uploads/animals/@Model.CoverImageUrl" alt="Animal Image" style="max-width: 300px; height: auto; display: block; margin: 0 auto;" />
+				}
+				else
+				{
+					<p>No image available</p>
+				}
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- /.container-fluid -->

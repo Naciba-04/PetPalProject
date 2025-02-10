@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ux2RzG6l7nzQ3gKuehHkDz8MYvami8HvOR4zzJ+g2ks=",
+  "Hash": "g44W5Nz/VUGm9c8XsnrVBdiSfuLJh9u2mV6Rtt8ve8o=",
   "Source": "Project.MVC",
   "BasePath": "_content/Project.MVC",
   "Mode": "Default",
@@ -7311,6 +7311,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\scss\\utils\\_typography.scss"
+    },
+    {
+      "Identity": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\animals\\1cd7aa38-f8fd-46be-a077-44e3491bfd8eWhiteCat (7).jpg",
+      "SourceId": "Project.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\",
+      "BasePath": "_content/Project.MVC",
+      "RelativePath": "uploads/animals/1cd7aa38-f8fd-46be-a077-44e3491bfd8eWhiteCat (7).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\animals\\1cd7aa38-f8fd-46be-a077-44e3491bfd8eWhiteCat (7).jpg"
     },
     {
       "Identity": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\08c389d4-7c23-4060-9011-264e951175fcR (4).jpg",
