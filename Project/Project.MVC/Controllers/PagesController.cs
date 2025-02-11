@@ -7,21 +7,23 @@ using Project.DAL.Repository.Abstaction;
 
 namespace Project.MVC.Controllers;
 
-public class PagesController(PetPatFinalProjectDbContext _context,IRatingService _ratingService,IGenericRepository<Rating> _repository) : Controller
+public class PagesController(PetPatFinalProjectDbContext _context,IRatingService _ratingService,IGenericRepository<Rating> _repository, IAnimalService _animalService, IGenericRepository<Animal> _animalrepository) : Controller
 {
     public async Task<IActionResult> CommentDetails()
     {
         var res = await _ratingService.GetAllAsync();
         return View(res);
     }
-    public IActionResult AllPets()
+    public async Task <IActionResult> AllPets()
     {
-        return View();
-    }
-    public IActionResult PetDetails()
+		var result = await _animalService.GetAllAsync();
+		return View(result);
+	}
+    public async Task <IActionResult> PetDetails(int id)
     {
-        return View();
-    }
+		var result = await _animalService.GetByIdAsync(id);
+		return View(result);
+	}
     public IActionResult Gallery()
     {
         return View();

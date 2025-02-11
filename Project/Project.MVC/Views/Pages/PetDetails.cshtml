@@ -1,0 +1,57 @@
+﻿@model GetAllAnimalDto
+<!-- animal-details-area -->
+<section class="animal__details-area">
+    <div class="container">
+        <div class="animal__details-wrap">
+            <div class="row">
+                <div class="col-61">
+                    <div class="animal__details-img-wrap">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="itemOne-tab-pane" role="tabpanel" aria-labelledby="itemOne-tab" tabindex="0">
+                                <div class="swiper pet-active">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="~/uploads/animals/@Model.CoverImageUrl class="popup-image">
+                                                <img src="~/uploads/animals/@Model.CoverImageUrl" alt="img">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-39">
+                    <aside class="animal__details-sidebar">
+                        <div class="animal__details-widget">
+                            <div class="animal__details-sidebar-info">
+                                <h4 class="title">@Model.Title</h4>
+                                <p>@Model.Description</p>
+                                <ul class="list-wrap">
+                                    <li><span>Color:</span>@Model.Color</li>
+                                    <li><span>Gender:</span>@Model.Gender</li>
+                                    <li><span>Weight:</span>@Model.Weight</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="animal__details-widget">
+                            <div class="payment__type-wrap">
+                                <form action="#" class="payment__form">
+                                   
+                                    <button type="submit">Bring Me Home</button>
+                                </form>
+                                
+                            </div>
+                        </div>
+                        
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- animal-details-area-end -->

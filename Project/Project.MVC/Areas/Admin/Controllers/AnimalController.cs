@@ -6,6 +6,7 @@ using Project.BL.DTOs.AnimalDTO;
 using Project.BL.DTOs.ProductDTO;
 using Project.BL.Exceptions;
 using Project.BL.Services.Abstraction;
+using Project.Core.Enums;
 using Project.Core.Model;
 
 namespace Project.MVC.Areas.Admin.Controllers;
@@ -89,26 +90,42 @@ public class AnimalController(IAnimalService _animalService,IMapper _mapper) : C
             return BadRequest(ex.Message);
         }
     }
-    public async Task<IActionResult> Details(int id)
-    {
-        try
-        {
-            var animalDto = await _animalService.GetByIdAsync(id);
+	public async Task<IActionResult> Details(int id)
+	{
+		try
+		{
+			var animalDto = await _animalService.GetByIdAsync(id);
 
-            var animal = _mapper.Map<Animal>(animalDto);
+			// animalDto.Gender dəyərinin int tipində olduğunu yoxlayırıq
+			if (animalDto.Gender == null || !Enum.IsDefined(typeof(Gender), animalDto.Gender))
+			{
+				return BadRequest("Invalid gender value.");
+			}
 
-            if (animal == null)
-            {
-                return NotFound();
-            }
+			// Gender dəyərini string olaraq alırıq və enum-a çeviririk
+			Gender genderEnum = Enum.Parse<Gender>(animalDto.Gender.ToString());
 
-            return View(animal);
-        }
-        catch (Exception ex)
-        {
-            return BadRequest(ex.Message);
-        }
-    }
+			// Gender dəyərini ViewData-ya göndəririk
+			ViewData["Gender"] = genderEnum.ToString(); // Enum-u string-ə çeviririk
+
+			var animal = _mapper.Map<Animal>(animalDto);
+
+			if (animal == null)
+			{
+				return NotFound();
+			}
+
+			return View(animal);
+		}
+		catch (Exception ex)
+		{
+			return BadRequest(ex.Message);
+		}
+	}
+
+
+
+
 
 
 
