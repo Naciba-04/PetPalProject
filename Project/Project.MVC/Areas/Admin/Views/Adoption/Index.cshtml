@@ -1,0 +1,55 @@
+﻿@model ICollection<GetAllAdoptionDto>
+
+@{
+    ViewData["Title"] = "Adoptions";
+}
+
+<h2>Adoptions</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>FullName</th>
+            <th>Email</th>
+            <th>HasHome</th>
+            <th>Maash</th>
+            <th>Status</th>
+            <th>Əməliyyatlar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.FullName</td>
+                <td>@item.Email</td>
+                <td>@(item.HasHouse ? "Yes" : "No")</td>
+                <td>@item.Salary</td>
+                
+                <td>
+                    <span class="badge @(item.ReservStatus == Project.Core.Enums.ReservStatus.Pending ? "bg-warning" :
+                                      item.ReservStatus == Project.Core.Enums.ReservStatus.Accepted ? "bg-success" : "bg-danger")">
+                        @item.ReservStatus
+                    </span>
+                </td>
+                <td>
+                    <a href="@Url.Action("Details", "Adoption", new { id = item.Id })" class="btn btn-info btn-sm">Detallar</a>
+
+                    @if (item.ReservStatus == Project.Core.Enums.ReservStatus.Pending)
+                    {
+                        <form method="post" asp-action="UpdateStatus" asp-controller="Adoption" class="d-inline">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <select name="newStatus" class="form-select form-select-sm d-inline" style="width: auto; display: inline;">
+                                <option value="Accepted">Qəbul Et</option>
+                                <option value="Rejected">Ləğv Et</option>
+                            </select>
+                            <button type="submit" class="btn btn-primary btn-sm">Təsdiqlə</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

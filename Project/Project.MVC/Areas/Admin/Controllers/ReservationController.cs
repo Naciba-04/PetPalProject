@@ -9,17 +9,8 @@ namespace Project.MVC.Areas.Admin.Controllers;
 
 [Area("Admin")]
 [Authorize(Roles = "Admin")]
-public class ReservationController : Controller
+public class ReservationController(IReservationService _reservationService, IEmailService _emailService) : Controller
 {
-    private readonly IReservationService _reservationService;
-    private readonly IEmailService _emailService;
-
-    public ReservationController(IReservationService reservationService, IEmailService emailService)
-    {
-        _reservationService = reservationService;
-        _emailService = emailService;
-    }
-
     public async Task<IActionResult> Index()
     {
         var reservations = await _reservationService.GetAllReservationsAsync();

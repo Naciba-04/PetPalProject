@@ -1,0 +1,32 @@
+﻿@model Adoption
+
+@{
+    ViewData["Title"] = "Adoption Detalları";
+}
+
+<h2>Adoption Detalları</h2>
+
+<table class="table table-striped">
+    <tr>
+        <th>ID:</th>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <th>Ad Soyad:</th>
+        <td>@Model.FullName</td>
+    </tr>
+    <tr>
+        <th>Has House?</th>
+        <td>@(Model.HasHouse ? "Yes" : "No")</td> 
+    </tr>
+    <tr>
+        <th>Email:</th>
+        <td>@Model.Email</td>
+    </tr>
+    <tr>
+        <th>ID:</th>
+        <td>@Model.Salary</td>
+    </tr>
+   
+
+    <a href="@Url.Action("Index", "Adoption")" class="btn btn-secondary mt-3">Geri</a>

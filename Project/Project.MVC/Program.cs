@@ -46,6 +46,8 @@ namespace Project.MVC
             builder.Services.AddScoped<IGenericRepository<PetService>, GenericRepository<PetService>>();
             builder.Services.AddScoped<IGenericRepository<Reservation>, GenericRepository<Reservation>>();
             builder.Services.AddScoped<IGenericRepository<Animal>, GenericRepository<Animal>>();
+            builder.Services.AddScoped<IGenericRepository<Adoption>, GenericRepository<Adoption>>();
+
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IDepartmentService, DepartmentService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
@@ -54,6 +56,8 @@ namespace Project.MVC
             builder.Services.AddScoped<IPetServiceService, PetServiceService>();
             builder.Services.AddScoped<IReservationService, ReservationService>();
             builder.Services.AddScoped<IAnimalService, AnimalService>();
+            builder.Services.AddScoped<IAdoptionService, AdoptionService>();
+
             builder.Services.AddValidatorsFromAssemblyContaining<CreateProductDtoValidation>();
 
             builder.Services.AddFluentValidationClientsideAdapters();

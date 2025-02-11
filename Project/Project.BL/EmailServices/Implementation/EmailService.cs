@@ -90,4 +90,61 @@ public class EmailService(IConfiguration _configuration) : IEmailService
         message.Body = "Xoş gəlmişsiniz🎉";
         smtp.Send(message);
     }
+
+    public void AdoptionMessage(string toUser)
+    {
+        SmtpClient smtp = new SmtpClient(_configuration["Email:Host"], Convert.ToInt32(_configuration["Email:Port"]));
+        smtp.EnableSsl = true;
+        smtp.Credentials = new NetworkCredential(_configuration["Email:Login"], _configuration["Email:Passcode"]);
+
+        MailAddress from = new MailAddress("nacibar-ab108@code.edu.az");
+        MailAddress to = new MailAddress(toUser);
+
+        MailMessage message = new MailMessage(from, to);
+
+
+        message.Subject = "Başvurunuz için Teşekkürler";
+        message.IsBodyHtml = true;
+
+        message.Body = "Sizinle elaqeye kecheceyik";
+        smtp.Send(message);
+    }
+
+    public void SendAdoptionAcceptedEmail(string toUser)
+    {
+        SmtpClient smtp = new SmtpClient(_configuration["Email:Host"], Convert.ToInt32(_configuration["Email:Port"]));
+        smtp.EnableSsl = true;
+        smtp.Credentials = new NetworkCredential(_configuration["Email:Login"], _configuration["Email:Passcode"]);
+
+        MailAddress from = new MailAddress("nacibar-ab108@code.edu.az");
+        MailAddress to = new MailAddress(toUser);
+
+        MailMessage message = new MailMessage(from, to);
+
+
+        message.Subject = "Başvurunuz için Teşekkürler";
+        message.IsBodyHtml = true;
+
+        message.Body = "Siz heyvani sahiblendiniz";
+        smtp.Send(message);
+    }
+
+    public void SendAdoptionRejectedEmail(string toUser)
+    {
+        SmtpClient smtp = new SmtpClient(_configuration["Email:Host"], Convert.ToInt32(_configuration["Email:Port"]));
+        smtp.EnableSsl = true;
+        smtp.Credentials = new NetworkCredential(_configuration["Email:Login"], _configuration["Email:Passcode"]);
+
+        MailAddress from = new MailAddress("nacibar-ab108@code.edu.az");
+        MailAddress to = new MailAddress(toUser);
+
+        MailMessage message = new MailMessage(from, to);
+
+
+        message.Subject = "Başvurunuz için Teşekkürler";
+        message.IsBodyHtml = true;
+
+        message.Body = "Efsuski qeydiniz legv olunurdu";
+        smtp.Send(message);
+    }
 }

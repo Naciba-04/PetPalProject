@@ -11,17 +11,8 @@ using System.Threading.Tasks;
 
 namespace Project.BL.Services.Implementation;
 
-public class ReservationService : IReservationService
+public class ReservationService(IGenericRepository<Reservation> _reservationRepository, IMapper _mapper) : IReservationService
 {
-    private readonly IGenericRepository<Reservation> _reservationRepository;
-    private readonly IMapper _mapper;
-
-    public ReservationService(IGenericRepository<Reservation> reservationRepository, IMapper mapper)
-    {
-        _reservationRepository = reservationRepository;
-        _mapper = mapper;
-    }
-
     public async Task CreateReservationAsync(CreateReservationDto createdto)
     {
         var map = _mapper.Map<Reservation>(createdto);

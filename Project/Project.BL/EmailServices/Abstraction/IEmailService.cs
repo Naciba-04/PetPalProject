@@ -13,4 +13,8 @@ public interface IEmailService
     void ReservMessage(string toUser);
     void SendAcceptedEmail(string toUser);
     void SendRejectedEmail(string toUser);
+    void AdoptionMessage(string toUser);
+    void SendAdoptionAcceptedEmail(string toUser);
+    void SendAdoptionRejectedEmail(string toUser);
+
 }
