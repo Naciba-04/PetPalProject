@@ -19,7 +19,7 @@
                                 <span>New</span>
                             </div>
                             <div class="product__add-cart">
-                                <a class="btn" ><i class="flaticon-shopping-bag"></i>Add To Cart</a>
+                                <a asp-controller="Cart" asp-action="AddToBasket" asp-route-productId="@item.Id" class="btn"><i class="flaticon-shopping-bag"></i>Add To Cart</a>
                             </div>
                         </div>
                         <div class="product__content"> 

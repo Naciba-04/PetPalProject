@@ -115,7 +115,7 @@
                                 <div class="tgmenu__action d-none d-md-block">
                                     <ul class="list-wrap">
                                         <li class="header-cart">
-                                            <a href="javascript:void(0)">
+                                            <a asp-controller="Cart" asp-action="Index" >
                                                 <i class="flaticon-shopping-bag"></i>
                                                 <span>0</span>
                                             </a>
@@ -123,14 +123,14 @@
                                     </ul>
                                 </div>
 
-                                <!-- Boşluq üçün yeni div əlavə edirik -->
+                               
                                 <div style="width: 20px;"></div>
 
                                 <div class="mobile-nav-toggler">
                                     <i class="flaticon-layout"></i>
                                 </div>
 
-                                <!-- Register və Logout düymələrini flex konteynerinə salırıq -->
+                               
                                 <div style="display: flex; gap: 20px;">
                                     @if (!User.Identity.IsAuthenticated)
                                     {

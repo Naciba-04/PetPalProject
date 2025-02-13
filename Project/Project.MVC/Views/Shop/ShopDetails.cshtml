@@ -6,24 +6,20 @@
             <div class="col-lg-6">
                 <div class="product__details-images-wrap">
                     <div class="tab-content" id="myTabContent">
-
                         <div class="tab-pane show active" id="itemOne-tab-pane" role="tabpanel" aria-labelledby="itemOne-tab" tabindex="0">
-                            <a href="~/uploads/products/@Model.CoverImageUrl class="popup-image">
+                            <a href="~/uploads/products/@Model.CoverImageUrl" class="popup-image">
                                 <img src="~/uploads/products/@Model.CoverImageUrl" alt="img">
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="product__details-content">
-                     <span class="tag">@Model.DepartmentName</span> 
+                    <span class="tag">@Model.DepartmentName</span>
                     <h2 class="title">@Model.Title</h2>
-                    <div class="product__reviews-wrap">
-                        
+                    <div class="product__reviews-wrap"></div>
 
-                    </div>
                     @if (Model.NewPrice > 0)
                     {
                         <h4 class="price">@Model.NewPrice AZN</h4>
@@ -35,22 +31,51 @@
 
                     <p>@Model.Description</p>
 
-                    <div class="product__details-qty">
-                        <div class="cart-plus-minus">
-                            <input type="text" value="1">
+                    <!-- Form to add to cart -->
+                    <form action="@Url.Action("AddToBasket", "Cart")" method="post">
+                        <div class="product__details-qty">
+                            <div class="cart-plus-minus">
+                                <!-- Miqdar input -->
+                                <input type="number" name="quantity" value="1" min="1" />
+                            </div>
                         </div>
-                        <a href="product-details.html" class="add-btn">Add To Cart</a>
-                    </div>
+
+                        <!-- ProductId hidden field -->
+                        <input type="hidden" name="productId" value="@Model.Id" />
+
+                        <!-- Add to Cart button (oval shape) -->
+                        <button type="submit" class="add-btn">
+                            <span>Add To Cart</span>
+                        </button>
+                    </form>
                     <a href="product-details.html" class="buy-btn">Buy it Now</a>
-
-
                 </div>
             </div>
-
         </div>
-
-
     </div>
-
 </section>
 <!-- product-details-area-end -->
+<head>
+    <style>
+        .add-btn {
+            display: block; 
+            width: 200px;
+            margin: 20px auto;
+            background-color: #9B59B6; 
+            color: #fff; 
+            padding: 10px 0;
+            border-radius: 30px; 
+            text-align: center; 
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease; 
+            margin-left: 15%;
+        }
+
+            .add-btn:hover {
+                background-color: #8E44AD; 
+            }
+    </style>
+</head>

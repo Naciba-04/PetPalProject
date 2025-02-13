@@ -96,17 +96,14 @@ public class AnimalController(IAnimalService _animalService,IMapper _mapper) : C
 		{
 			var animalDto = await _animalService.GetByIdAsync(id);
 
-			// animalDto.Gender dəyərinin int tipində olduğunu yoxlayırıq
 			if (animalDto.Gender == null || !Enum.IsDefined(typeof(Gender), animalDto.Gender))
 			{
 				return BadRequest("Invalid gender value.");
 			}
 
-			// Gender dəyərini string olaraq alırıq və enum-a çeviririk
 			Gender genderEnum = Enum.Parse<Gender>(animalDto.Gender.ToString());
 
-			// Gender dəyərini ViewData-ya göndəririk
-			ViewData["Gender"] = genderEnum.ToString(); // Enum-u string-ə çeviririk
+			ViewData["Gender"] = genderEnum.ToString(); 
 
 			var animal = _mapper.Map<Animal>(animalDto);
 

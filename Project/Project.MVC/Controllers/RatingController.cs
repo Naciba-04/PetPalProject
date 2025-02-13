@@ -21,7 +21,6 @@ public class RatingController(PetPatFinalProjectDbContext _context, UserManager<
         var user = await _userManager.GetUserAsync(User);
         if (user == null) return RedirectToAction("Message", "Rating");
 
-        // İstifadəçinin artıq reyting verib-vermədiyini yoxlayırıq
         var existingRating = await _context.Ratings.FirstOrDefaultAsync(r => r.AppUserId == user.Id);
         if (existingRating != null)
         {

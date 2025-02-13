@@ -16,7 +16,6 @@ public class AnimalProfile : Profile
 {
 	public AnimalProfile()
 	{
-		// Enum dəyərləri int olaraq saxlanırsa bu şəkildə çevrilməlidir
 		CreateMap<CreateAnimalDto, Animal>().ReverseMap()
 			.ForMember(dest => dest.Gender, opt => opt.MapFrom(src => (Gender)src.Gender));
 
