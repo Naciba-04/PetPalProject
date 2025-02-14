@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qXjyiycW+gYwpwLrUZtOQoeSA7ZhIIW7SIngC47S/yE=",
+  "Hash": "/HyigByRwPaktLsWppRofHN3W3xlzMphf75HhpBL3Uk=",
   "Source": "Project.MVC",
   "BasePath": "_content/Project.MVC",
   "Mode": "Default",
@@ -7408,6 +7408,25 @@
       "OriginalItemSpec": "wwwroot\\uploads\\products\\08c389d4-7c23-4060-9011-264e951175fcR (4).jpg"
     },
     {
+      "Identity": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\139557e1-2fe2-4800-9383-af04f8139436R (1).jpg",
+      "SourceId": "Project.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\",
+      "BasePath": "_content/Project.MVC",
+      "RelativePath": "uploads/products/139557e1-2fe2-4800-9383-af04f8139436R (1).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\139557e1-2fe2-4800-9383-af04f8139436R (1).jpg"
+    },
+    {
       "Identity": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\23292c3a-b180-4e75-9508-c69cab54d4a3greeycat.jpg",
       "SourceId": "Project.MVC",
       "SourceType": "Discovered",
@@ -7463,6 +7482,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\products\\2efb2565-bc16-4be5-86c5-d3b71f708278dogeat.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\3d2c1973-3381-4824-a828-cd0b51bcefd0R (3).jpg",
+      "SourceId": "Project.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\",
+      "BasePath": "_content/Project.MVC",
+      "RelativePath": "uploads/products/3d2c1973-3381-4824-a828-cd0b51bcefd0R (3).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\3d2c1973-3381-4824-a828-cd0b51bcefd0R (3).jpg"
+    },
+    {
+      "Identity": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\4d67ba39-ab90-43d2-b84a-40d516e9e2b3download.jpg",
+      "SourceId": "Project.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\",
+      "BasePath": "_content/Project.MVC",
+      "RelativePath": "uploads/products/4d67ba39-ab90-43d2-b84a-40d516e9e2b3download.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\4d67ba39-ab90-43d2-b84a-40d516e9e2b3download.jpg"
     },
     {
       "Identity": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\67d18d3b-bef9-4fca-bf12-d7700bf150b0cattoys.jpg",
@@ -7539,25 +7596,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\products\\88119f78-b15d-4075-a2af-3588b81e463aR.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\a6ec3323-c9bd-49f1-b8c0-1bd349f7e2a3R (4).jpg",
-      "SourceId": "Project.MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\",
-      "BasePath": "_content/Project.MVC",
-      "RelativePath": "uploads/products/a6ec3323-c9bd-49f1-b8c0-1bd349f7e2a3R (4).jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\a6ec3323-c9bd-49f1-b8c0-1bd349f7e2a3R (4).jpg"
     }
   ]
 }

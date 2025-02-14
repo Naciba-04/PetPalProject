@@ -40,7 +40,8 @@ public class CartController(PetPatFinalProjectDbContext _context,IProductService
                 Title = product.Title,
                 NewPrice = product.NewPrice,
                 OldPrice = product.OldPrice,
-                Quantity = quantity  // Gələn quantity-ni istifadə edirik
+                Quantity = 1,
+                ImageUrl= product.CoverImageUrl
             });
         }
         else
@@ -134,8 +135,6 @@ public class CartController(PetPatFinalProjectDbContext _context,IProductService
 
 		return Json(new { success = false });
 	}
-
-
 }
 
 

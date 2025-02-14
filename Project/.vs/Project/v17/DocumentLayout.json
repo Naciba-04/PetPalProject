@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\controllers\\ratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\controllers\\ratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\views\\shop\\shopdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -35,12 +23,40 @@
       "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\views\\shop\\ourshop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.bl\\dtos\\basketdto\\basketitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\dtos\\basketdto\\basketitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.bl\\dtos\\basketdto\\basketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\dtos\\basketdto\\basketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.bl\\dtos\\basketdto\\basketitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\dtos\\basketdto\\basketitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\areas\\admin\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\areas\\admin\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.bl\\profiles\\animalprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\profiles\\animalprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.bl\\profiles\\adoptionprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\profiles\\adoptionprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\controllers\\ratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\controllers\\ratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28B3ED74-60A4-4B43-BDD0-B9E43BB90E11}|Project.Core\\Project.Core.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.core\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -85,14 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.bl\\emailservices\\abstraction\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\emailservices\\abstraction\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.bl\\profiles\\animalprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\profiles\\animalprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.bl\\profiles\\adoptionprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\profiles\\adoptionprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5588F5A-472E-4533-8F25-CDD1B82A876D}|Project.BL\\Project.BL.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.bl\\services\\implementation\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -179,10 +187,6 @@
       "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\areas\\admin\\views\\animal\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\areas\\admin\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\areas\\admin\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|c:\\users\\resul\\desktop\\petpalproject\\project\\project.mvc\\views\\pages\\commentdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C149A7BB-9DE1-4C3B-A105-C011835E9C63}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\views\\pages\\commentdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -214,11 +218,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Project.MVC\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Project.MVC\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAACIAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T20:43:14.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.Core\\Model\\Product.cs",
               "RelativeDocumentMoniker": "Project.Core\\Model\\Product.cs",
@@ -230,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "RatingController.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Controllers\\RatingController.cs",
               "RelativeDocumentMoniker": "Project.MVC\\Controllers\\RatingController.cs",
@@ -242,56 +259,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "BasketDto.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\DTOs\\BasketDTO\\BasketDto.cs",
               "RelativeDocumentMoniker": "Project.BL\\DTOs\\BasketDTO\\BasketDto.cs",
               "ToolTip": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\DTOs\\BasketDTO\\BasketDto.cs",
               "RelativeToolTip": "Project.BL\\DTOs\\BasketDTO\\BasketDto.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAlwAsAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T11:59:14.892Z"
+              "WhenOpened": "2025-02-13T11:59:14.892Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Views\\Cart\\Index.cshtml",
               "ToolTip": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Views\\Cart\\Index.cshtml",
               "RelativeToolTip": "Project.MVC\\Views\\Cart\\Index.cshtml",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAAAIwAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAALoAAAAAAAAAAAAiwM4AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-13T10:34:29.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "BasketItemDto.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\DTOs\\BasketDTO\\BasketItemDto.cs",
               "RelativeDocumentMoniker": "Project.BL\\DTOs\\BasketDTO\\BasketItemDto.cs",
               "ToolTip": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\DTOs\\BasketDTO\\BasketItemDto.cs",
               "RelativeToolTip": "Project.BL\\DTOs\\BasketDTO\\BasketItemDto.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAABwAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAACIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T10:11:52.389Z"
+              "WhenOpened": "2025-02-13T10:11:52.389Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "Project.MVC\\Controllers\\CartController.cs",
               "ToolTip": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Controllers\\CartController.cs",
               "RelativeToolTip": "Project.MVC\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAmwI0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T09:45:30.309Z"
+              "WhenOpened": "2025-02-13T09:45:30.309Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Views\\Reservation\\Create.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Views\\Reservation\\Create.cshtml",
@@ -303,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "CreateAdoption.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Views\\Pages\\CreateAdoption.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Views\\Pages\\CreateAdoption.cshtml",
@@ -315,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "20250211210903_TableAdoptionCreated.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.DAL\\Migrations\\20250211210903_TableAdoptionCreated.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Migrations\\20250211210903_TableAdoptionCreated.cs",
@@ -327,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "AdoptionConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.DAL\\Configurations\\AdoptionConfiguration.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Configurations\\AdoptionConfiguration.cs",
@@ -339,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "20250211210229_TableAdoptionCreated.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.DAL\\Migrations\\20250211210229_TableAdoptionCreated.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Migrations\\20250211210229_TableAdoptionCreated.cs",
@@ -351,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Views\\Reservation\\Index.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Areas\\Admin\\Views\\Reservation\\Index.cshtml",
@@ -363,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Views\\Adoption\\Details.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Areas\\Admin\\Views\\Adoption\\Details.cshtml",
@@ -375,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Views\\Adoption\\Index.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Areas\\Admin\\Views\\Adoption\\Index.cshtml",
@@ -387,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "ReservationController.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Controllers\\ReservationController.cs",
               "RelativeDocumentMoniker": "Project.MVC\\Areas\\Admin\\Controllers\\ReservationController.cs",
@@ -399,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "AdoptionController.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Controllers\\AdoptionController.cs",
               "RelativeDocumentMoniker": "Project.MVC\\Areas\\Admin\\Controllers\\AdoptionController.cs",
@@ -411,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "ReservationService.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\Services\\Implementation\\ReservationService.cs",
               "RelativeDocumentMoniker": "Project.BL\\Services\\Implementation\\ReservationService.cs",
@@ -423,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "AdoptionService.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\Services\\Implementation\\AdoptionService.cs",
               "RelativeDocumentMoniker": "Project.BL\\Services\\Implementation\\AdoptionService.cs",
@@ -435,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "IAdoptionService.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\Services\\Abstraction\\IAdoptionService.cs",
               "RelativeDocumentMoniker": "Project.BL\\Services\\Abstraction\\IAdoptionService.cs",
@@ -447,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 10,
               "Title": "AdoptionProfile.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\Profiles\\AdoptionProfile.cs",
               "RelativeDocumentMoniker": "Project.BL\\Profiles\\AdoptionProfile.cs",
@@ -459,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "PetPatFinalProjectDbContext.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.DAL\\Contexts\\PetPatFinalProjectDbContext.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Contexts\\PetPatFinalProjectDbContext.cs",
@@ -471,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "GetAllAdoptionDto.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\DTOs\\AdoptionDTO\\GetAllAdoptionDto.cs",
               "RelativeDocumentMoniker": "Project.BL\\DTOs\\AdoptionDTO\\GetAllAdoptionDto.cs",
@@ -483,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "UpdateAdoptionDto.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\DTOs\\AdoptionDTO\\UpdateAdoptionDto.cs",
               "RelativeDocumentMoniker": "Project.BL\\DTOs\\AdoptionDTO\\UpdateAdoptionDto.cs",
@@ -495,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "CreateAdoptionDto.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\DTOs\\AdoptionDTO\\CreateAdoptionDto.cs",
               "RelativeDocumentMoniker": "Project.BL\\DTOs\\AdoptionDTO\\CreateAdoptionDto.cs",
@@ -507,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "CreateReservationDto.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\DTOs\\ReservationDTO\\CreateReservationDto.cs",
               "RelativeDocumentMoniker": "Project.BL\\DTOs\\ReservationDTO\\CreateReservationDto.cs",
@@ -519,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Adoption.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.Core\\Model\\Adoption.cs",
               "RelativeDocumentMoniker": "Project.Core\\Model\\Adoption.cs",
@@ -531,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\EmailServices\\Implementation\\EmailService.cs",
               "RelativeDocumentMoniker": "Project.BL\\EmailServices\\Implementation\\EmailService.cs",
@@ -543,7 +563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\EmailServices\\Abstraction\\IEmailService.cs",
               "RelativeDocumentMoniker": "Project.BL\\EmailServices\\Abstraction\\IEmailService.cs",
@@ -555,7 +575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "ReservationController.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Controllers\\ReservationController.cs",
               "RelativeDocumentMoniker": "Project.MVC\\Controllers\\ReservationController.cs",
@@ -567,7 +587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Views\\Shared\\_Layout.cshtml",
@@ -579,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Views\\_ViewImports.cshtml",
@@ -591,7 +611,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "CommentDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Views\\Pages\\CommentDetails.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Views\\Pages\\CommentDetails.cshtml",
@@ -603,7 +623,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "PetDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Views\\Pages\\PetDetails.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Views\\Pages\\PetDetails.cshtml",
@@ -615,7 +635,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "AllPets.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Views\\Pages\\AllPets.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Views\\Pages\\AllPets.cshtml",
@@ -627,19 +647,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "PagesController.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Controllers\\PagesController.cs",
               "RelativeDocumentMoniker": "Project.MVC\\Controllers\\PagesController.cs",
               "ToolTip": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Controllers\\PagesController.cs",
               "RelativeToolTip": "Project.MVC\\Controllers\\PagesController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAADAAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T10:56:38.107Z"
+              "WhenOpened": "2025-02-11T10:56:38.107Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "IAnimalService.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\Services\\Abstraction\\IAnimalService.cs",
               "RelativeDocumentMoniker": "Project.BL\\Services\\Abstraction\\IAnimalService.cs",
@@ -651,7 +672,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "AnimalService.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\Services\\Implementation\\AnimalService.cs",
               "RelativeDocumentMoniker": "Project.BL\\Services\\Implementation\\AnimalService.cs",
@@ -663,19 +684,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 7,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Views\\Product\\Details.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Areas\\Admin\\Views\\Product\\Details.cshtml",
               "ToolTip": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Views\\Product\\Details.cshtml",
               "RelativeToolTip": "Project.MVC\\Areas\\Admin\\Views\\Product\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-10T22:32:03.621Z"
+              "WhenOpened": "2025-02-10T22:32:03.621Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "20250210222600_CreatedAnimalTables.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.DAL\\Migrations\\20250210222600_CreatedAnimalTables.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Migrations\\20250210222600_CreatedAnimalTables.cs",
@@ -687,7 +709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 9,
               "Title": "AnimalProfile.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.BL\\Profiles\\AnimalProfile.cs",
               "RelativeDocumentMoniker": "Project.BL\\Profiles\\AnimalProfile.cs",
@@ -699,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
@@ -711,7 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Program.cs",
               "RelativeDocumentMoniker": "Project.MVC\\Program.cs",
@@ -723,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Areas\\Admin\\Views\\_ViewImports.cshtml",
@@ -735,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Views\\Animal\\Details.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Areas\\Admin\\Views\\Animal\\Details.cshtml",
@@ -747,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Views\\Animal\\Update.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Areas\\Admin\\Views\\Animal\\Update.cshtml",
@@ -759,7 +781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Views\\Animal\\Create.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Areas\\Admin\\Views\\Animal\\Create.cshtml",
@@ -771,7 +793,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Views\\Animal\\Index.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Areas\\Admin\\Views\\Animal\\Index.cshtml",
@@ -783,7 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "AnimalController.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Areas\\Admin\\Controllers\\AnimalController.cs",
               "RelativeDocumentMoniker": "Project.MVC\\Areas\\Admin\\Controllers\\AnimalController.cs",
@@ -795,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "ShopController.cs",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Controllers\\ShopController.cs",
               "RelativeDocumentMoniker": "Project.MVC\\Controllers\\ShopController.cs",
@@ -807,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "OurShop.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Views\\Shop\\OurShop.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Views\\Shop\\OurShop.cshtml",
@@ -815,19 +837,21 @@
               "RelativeToolTip": "Project.MVC\\Views\\Shop\\OurShop.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-10T21:56:31.604Z"
+              "WhenOpened": "2025-02-10T21:56:31.604Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "ShopDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Views\\Shop\\ShopDetails.cshtml",
               "RelativeDocumentMoniker": "Project.MVC\\Views\\Shop\\ShopDetails.cshtml",
               "ToolTip": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\Views\\Shop\\ShopDetails.cshtml",
               "RelativeToolTip": "Project.MVC\\Views\\Shop\\ShopDetails.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-10T21:55:34.492Z"
+              "WhenOpened": "2025-02-10T21:55:34.492Z",
+              "EditorCaption": ""
             }
           ]
         }
