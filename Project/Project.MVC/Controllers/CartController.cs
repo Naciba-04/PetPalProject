@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Azure;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Project.BL.DTOs.BasketDTO;
 using Project.BL.Services.Abstraction;
@@ -16,68 +17,53 @@ public class CartController(PetPatFinalProjectDbContext _context,IProductService
 
         return View(basket);
     }
-	[HttpPost]
-	public IActionResult AddToBasket(int productId, int quantity)
-	{
-		Product? product = _context.Products.Find(productId);
-		if (product == null)
-		{
-			return NotFound("Məhsul tapılmadı.");
-		}
+    [HttpPost]
+    public IActionResult AddToBasket(int productId, int quantity)
+    {
+        // Məhsulu tapırıq
+        var product = _context.Products.Find(productId);
+        if (product == null)
+        {
+            // Məhsul tapılmadısa, səhv yönləndirmə
+            return RedirectToAction("Index", "Shop");
+        }
 
-		var cookieOption = new CookieOptions()
-		{
-			Expires = DateTime.Now.AddDays(7),
-			HttpOnly = true
-		};
+        // Səbətə məhsul əlavə edirik
+        var basket = GetBasket(); // Burada GetBasket() metodunu istifadə edirik
+        var basketItem = basket.Items.FirstOrDefault(i => i.Id == productId);
 
-		BasketDto basket = GetBasket();
-		if (basket == null)
-		{
-			basket = new BasketDto();
-		}
+        if (basketItem == null)
+        {
+            basket.Items.Add(new BasketItemDto
+            {
+                Id = productId,
+                Title = product.Title,
+                NewPrice = product.NewPrice,
+                OldPrice = product.OldPrice,
+                Quantity = quantity  // Gələn quantity-ni istifadə edirik
+            });
+        }
+        else
+        {
+            // Məhsul artıq varsa, sayını artırırıq
+            basketItem.Quantity += quantity;  // Yeni miqdarı artırırıq
+        }
 
-		BasketItemDto? existingBasketItem = basket.Items.FirstOrDefault(g => g.Id == product.Id);
-		if (existingBasketItem == null)
-		{
-			
-			BasketItemDto basketItemDto = new BasketItemDto()
-			{
-				Description = product.Description,
-				Id = product.Id,
-				ImageUrl = product.CoverImageUrl,
-				Title = product.Title,
-				NewPrice = product.NewPrice, 
-				OldPrice = product.OldPrice, 
-				DepartmentId = product.DepartmentId,
-				Quantity = quantity
-			};
+        // Yeni səbət məlumatlarını cookie-yə əlavə edirik
+        var basketJson = JsonConvert.SerializeObject(basket);
+        Response.Cookies.Append("Basket", basketJson, new CookieOptions
+        {
+            Expires = DateTime.Now.AddDays(7),
+            HttpOnly = true
+        });
 
-			
-			if (!product.NewPrice.HasValue)
-			{
-				basketItemDto.NewPrice = product.OldPrice; 
-			}
-
-			basket.Items.Add(basketItemDto);
-		}
-		else
-		{
-			
-			existingBasketItem.Quantity += quantity;
-		}
-
-		var cookieBasket = JsonConvert.SerializeObject(basket);
-		Response.Cookies.Append("Basket", cookieBasket, cookieOption);
-
-		return RedirectToAction("OurShop", "Shop");
-	}
+        // Səbətə əlavə etdikdən sonra istifadəçini səbət səhifəsinə yönləndiririk
+        return RedirectToAction("Index", "Cart");
+    }
 
 
 
-
-
-	public BasketDto GetBasket()
+    public BasketDto GetBasket()
     {
         var basket = Request.Cookies["Basket"];
         if (basket != null)
@@ -88,32 +74,68 @@ public class CartController(PetPatFinalProjectDbContext _context,IProductService
         }
         return new BasketDto();
     }
-  
-    public IActionResult RemoveFromBasket(int productId)
-    {
-        var basket = GetBasket();
-        if (basket == null || basket.Items.Count == 0)
-        {
-            return NotFound("Basket boşdur və ya tapılmadı.");
-        }
 
-        var itemToRemove = basket.Items.FirstOrDefault(g => g.Id == productId);
-        if (itemToRemove != null)
-        {
-            basket.Items.Remove(itemToRemove);
-            var cookieOption = new CookieOptions()
-            {
-                Expires = DateTime.Now.AddDays(7),
-                HttpOnly = true
-            };
-            var cookieBasket = JsonConvert.SerializeObject(basket);
-            Response.Cookies.Append("Basket", cookieBasket, cookieOption);
-            return Ok();
-        }
+	[HttpPost]
+	public IActionResult RemoveFromBasket(int productId)
+	{
+		var basket = GetBasket(); // Basketi əldə edirik
+		var basketItem = basket.Items.FirstOrDefault(i => i.Id == productId);
 
-        return NotFound("Məhsul tapılmadı.");
-    }
+		if (basketItem != null)
+		{
+			basket.Items.Remove(basketItem); // Məhsulu silirik
+
+			var basketJson = JsonConvert.SerializeObject(basket);
+			Response.Cookies.Append("Basket", basketJson, new CookieOptions
+			{
+				Expires = DateTime.Now.AddDays(7),
+				HttpOnly = true
+			});
+
+			decimal newTotalPrice = basket.Items.Sum(item => item.NewPrice.HasValue ? item.NewPrice.Value * item.Quantity : item.OldPrice.HasValue ? item.OldPrice.Value * item.Quantity : 0);
+
+			return Json(new { success = true, totalPrice = newTotalPrice });
+		}
+
+		return Json(new { success = false });
+	}
+
+
+	[HttpPost]
+	public IActionResult UpdateQuantity(int productId, int quantity)
+	{
+		var basket = GetBasket(); // Basketi əldə edirik
+		var basketItem = basket.Items.FirstOrDefault(i => i.Id == productId);
+
+		if (basketItem != null && quantity > 0)  // Müsbət miqdar yoxlanır
+		{
+			basketItem.Quantity = quantity;
+
+			// Basketi yeniləyirik
+			var basketJson = JsonConvert.SerializeObject(basket);
+			Response.Cookies.Append("Basket", basketJson, new CookieOptions
+			{
+				Expires = DateTime.Now.AddDays(7),
+				HttpOnly = true
+			});
+
+			// Yeni ümumi qiyməti göndəririk
+			decimal newTotalPrice = basket.Items.Sum(item => item.NewPrice.HasValue ? item.NewPrice.Value * item.Quantity : item.OldPrice.HasValue ? item.OldPrice.Value * item.Quantity : 0);
+
+			// Hər bir məhsulun yeni qiymətini də döndəririk
+			var itemPrices = basket.Items.Select(item => new
+			{
+				itemId = item.Id,
+				itemTotal = item.NewPrice.HasValue ? item.NewPrice.Value * item.Quantity : item.OldPrice.HasValue ? item.OldPrice.Value * item.Quantity : 0
+			}).ToList();
+
+			return Json(new { success = true, totalPrice = newTotalPrice, itemPrices });
+		}
+
+		return Json(new { success = false });
+	}
 
 
 }
+
 

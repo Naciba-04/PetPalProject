@@ -1557,8 +1557,8 @@
       "PackagePath": "staticwebassets\\uploads\\products\\08c389d4-7c23-4060-9011-264e951175fcR (4).jpg"
     },
     {
-      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\16aae5c0-bc59-40dd-b25c-f6178e6e7447products_img01.jpg",
-      "PackagePath": "staticwebassets\\uploads\\products\\16aae5c0-bc59-40dd-b25c-f6178e6e7447products_img01.jpg"
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\23292c3a-b180-4e75-9508-c69cab54d4a3greeycat.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\23292c3a-b180-4e75-9508-c69cab54d4a3greeycat.jpg"
     },
     {
       "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\28673a06-6aea-4cef-a4a4-7b341c6dc9acBrownCat (7).jpg",
@@ -1583,6 +1583,10 @@
     {
       "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\88119f78-b15d-4075-a2af-3588b81e463aR.jpg",
       "PackagePath": "staticwebassets\\uploads\\products\\88119f78-b15d-4075-a2af-3588b81e463aR.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\products\\a6ec3323-c9bd-49f1-b8c0-1bd349f7e2a3R (4).jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\a6ec3323-c9bd-49f1-b8c0-1bd349f7e2a3R (4).jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Project.MVC.Microsoft.AspNetCore.StaticWebAssets.props",

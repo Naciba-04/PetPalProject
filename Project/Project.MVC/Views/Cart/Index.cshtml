@@ -1,11 +1,12 @@
 ﻿@model BasketDto;
+
 <!-- Page Title -->
 <div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
 	<div class="container position-relative">
 		<h1>Basket</h1>
-		
 	</div>
 </div><!-- End Page Title -->
+
 <section class="h-100 h-custom">
 	<div class="container py-5 h-100">
 		<div class="row d-flex justify-content-center align-items-center h-100">
@@ -18,18 +19,12 @@
 									<div class="d-flex justify-content-between align-items-center mb-5">
 										<h1 class="fw-bold mb-0">Shopping Cart</h1>
 										<h6 class="mb-0 text-muted">@(Model.Items.Count) items</h6>
-
 									</div>
 									<hr class="my-4">
 
-
-
-
 									@foreach (var item in Model.Items)
 									{
-
-
-										<div class="row mb-4 d-flex justify-content-between align-items-center">
+										<div class="row mb-4 d-flex justify-content-between align-items-center" id="productRow_@item.Id">
 											<div class="col-md-2 col-lg-2 col-xl-2">
 												<img src="~/uploads/products/@item.ImageUrl" class="img-fluid rounded-3" alt="">
 											</div>
@@ -37,53 +32,52 @@
 												<h6 class="text-muted">@item.Title</h6>
 											</div>
 											<div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-												<button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-														onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+												<!-- Minus düyməsi -->
+												<button onclick="changeQuantity(@item.Id, -1)">
 													<i class="fas fa-minus"></i>
 												</button>
 
-												<input id="form1" min="0" name="quantity" value="@item.Quantity" type="number"
-													   class="form-control form-control-sm" />
+												<!-- Input ilə miqdar -->
+												<input id="quantity_@item.Id" min="0" name="quantity" value="@item.Quantity" type="number"
+													   class="form-control form-control-sm" onchange="updateQuantity(@item.Id, this.value)" />
 
-												<button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-														onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+												<!-- Plus düyməsi -->
+												<button onclick="changeQuantity(@item.Id, 1)">
 													<i class="fas fa-plus"></i>
 												</button>
 											</div>
+
+
+											<!-- Total Price for the specific product -->
 											<div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
 												<h6 class="mb-0 new-price">
+													<!-- Total price for this product -->
+													
 													@if (item.NewPrice.HasValue)
 													{
-														<span>AZN @item.NewPrice.Value.ToString("F2")</span>  
+														<span>@(item.NewPrice.Value * item.Quantity)</span> <!-- Total for this product -->
 													}
 													else if (item.OldPrice.HasValue)
 													{
-														<span>AZN @item.OldPrice.Value.ToString("F2")</span> 
+														<span>@(item.OldPrice.Value * item.Quantity)</span> <!-- Total for this product -->
 													}
 													else
 													{
-														<span>AZN 0.00</span> 
+														<span>0.00</span>
 													}
 												</h6>
 											</div>
-
-
-
-
-
 											<div class="col-md-1 col-lg-1 col-xl-1 text-end">
-												<button style="border: none; background: none;" onclick="removeFromBasket(@item.Id)" class="text-muted"><a asp-controller="Cart" asp-action="RemoveFromBasket" asp-route-productId="@item.Id" class="btn"><i class="fas fa-times"></i></a></button>
+												<button style="border: none; background: none;" onclick="removeFromBasket(@item.Id)" class="text-muted">
+													<i class="fas fa-times"></i>
+												</button>
 											</div>
 										</div>
-
-
 									}
 
 
 
 									<hr class="my-4">
-
-
 
 									<div class="pt-5">
 										<h6 class="mb-0">
@@ -94,6 +88,7 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="col-lg-4 bg-body-tertiary">
 								<div class="p-5">
 									<h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
@@ -103,19 +98,17 @@
 										<h5 class="text-uppercase">@(Model.Items.Count) items</h5>
 									</div>
 
-									
 									<hr class="my-4">
 
 									<div class="d-flex justify-content-between mb-5">
 										<h5 class="text-uppercase">Total price</h5>
-										<h5>€ @Model.TotalPrice.ToString("F2")</h5> 
+										<h5 id="totalPrice">AZN @Model.TotalPrice</h5> <!-- Burada ümumi qiymət göstərilir -->
 									</div>
 
-									<button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-block btn-lg"
-											data-mdb-ripple-color="dark">
+
+									<button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-block btn-lg" data-mdb-ripple-color="dark">
 										Register
 									</button>
-
 								</div>
 							</div>
 						</div>
@@ -127,28 +120,97 @@
 </section>
 
 <script>
+	function updateQuantity(productId, quantity) {
+		// Müəyyən olunmuş məhsul və miqdarı backend-ə göndəririk
+		fetch('/Cart/UpdateQuantity', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded'
+			},
+			body: `productId=${productId}&quantity=${quantity}`  // Düzgün sintaksis
+		})
+			.then(response => {
+				if (!response.ok) {
+					throw new Error('Məhsul sayını dəyişdirmək mümkün olmadı');
+				}
+				return response.json();
+			})
+			.then(data => {
+				if (data.success) {
+					// Serverdən yeni ümumi qiymət gəldi, bunu səhifədə yeniləyirik
+					document.querySelector("#totalPrice").textContent = `AZN ${data.totalPrice.toFixed(2)}`;
+
+					// Hər bir məhsulun yeni qiymətini yeniləyirik
+					data.itemPrices.forEach(itemPrice => {
+						const itemRow = document.querySelector(`#productRow_${itemPrice.itemId}`);
+						if (itemRow) {
+							const totalPriceElement = itemRow.querySelector(".new-price span");
+							totalPriceElement.textContent = itemPrice.itemTotal.toFixed(2);
+						}
+					});
+				} else {
+					alert('Qəbul edilən say müsbət olmalıdır.');
+				}
+			})
+			.catch(error => {
+				console.error('Xəta:', error);
+				alert('Xəta baş verdi!');
+			});
+	}
+
 	function removeFromBasket(productId) {
+		// Məhsulun satırını tapırıq
+		const productRow = document.querySelector(`#productRow_${productId}`);
+		if (productRow) {
+			productRow.remove();  // Məhsulun satırını silirik
+		}
+
 		fetch('/Cart/RemoveFromBasket', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/x-www-form-urlencoded'
 			},
-			body: productId=${productId}
+			body: `productId=${productId}`  // Məhsul ID-sini göndəririk
 		})
-			.then(response => {
-				if (!response.ok) {
-					throw new Error('Məhsul silinə bilmədi');
-				}
-				return response.text();
-			})
+			.then(response => response.json())
 			.then(data => {
-				alert("Məhsul silindi!");
-				location.reload();
+				if (data.success) {
+					// Ümumi qiyməti yeniləyirik
+					document.querySelector("#totalPrice").textContent = `AZN ${data.totalPrice.toFixed(2)}`;
+					alert('Məhsul silindi!');
+				} else {
+					alert("Məhsul silinə bilmədi!");
+				}
 			})
 			.catch(error => {
 				console.error("Xəta baş verdi:", error);
 				alert("Xəta baş verdi!");
 			});
 	}
+	// `+` və `-` düymələri ilə miqdarı dəyişdirmək üçün
+	function changeQuantity(productId, change) {
+		// `quantity` inputunun mövcud dəyərini alırıq
+		const quantityInput = document.querySelector(`#quantity_${productId}`);
+		let newQuantity = parseInt(quantityInput.value) + change; // Dəyəri artırır və ya azaldırıq
+
+		if (newQuantity < 0) {
+			newQuantity = 0; // Negativ dəyərin qarşısını alırıq
+		}
+
+		// Yeni qiyməti inputa təyin edirik
+		quantityInput.value = newQuantity;
+
+		// Yeni miqdarı backend-ə göndəririk
+		updateQuantity(productId, newQuantity);
+	}
+
 
 </script>
+<style>
+	input[type="number"] {
+		width: 70px; /* Input sahəsinin genişliyini artırdıq */
+		font-size: 16px; /* Font ölçüsünü düzəltdik ki, uzun rəqəmlər tam görünsün */
+		text-align: center; /* Rəqəmləri ortada yerləşdirmək üçün */
+	}
+
+</style>
