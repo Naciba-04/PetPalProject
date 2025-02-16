@@ -1,6 +1,6 @@
 ﻿@model ICollection<GetAllRatingCommentDto>
 
-<!-- Font Awesome ən son versiyası -->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <!-- Testimonial Start -->
@@ -15,7 +15,7 @@
             <h1 class="mb-3 text-dark">What Our Clients Say</h1>
         </div>
         <div class="owl-carousel testimonial-carousel">
-            @foreach (var item in Model.DistinctBy(x => x.Comment)) // Comment eyni olanları çıxarır
+            @foreach (var item in Model.DistinctBy(x => x.Comment)) 
             {
                 <div class="testimonial-item bg-white border rounded shadow-lg p-5 position-relative" style="transition: transform 0.3s ease-in-out; cursor: pointer;">
                     <i class="fas fa-quote-left fa-4x text-primary position-absolute opacity-25" style="top: 10px; left: 20px;"></i>
@@ -32,15 +32,15 @@
                                 {
                                     if (i <= item.Score)
                                     {
-                                        <i class="fas fa-star"></i> <!-- Tam dolu ulduz -->
+                                        <i class="fas fa-star"></i> 
                                     }
                                     else if (i - 0.5 == item.Score)
                                     {
-                                        <i class="fas fa-star-half-alt"></i> <!-- Yarım ulduz -->
+                                        <i class="fas fa-star-half-alt"></i> 
                                     }
                                     else
                                     {
-                                        <i class="far fa-star"></i> <!-- Boş ulduz -->
+                                        <i class="far fa-star"></i> 
                                     }
                                 }
                             </div>

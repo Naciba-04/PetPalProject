@@ -9,48 +9,57 @@ using System;
 
 namespace Project.MVC.Controllers;
 
-public class CartController(PetPatFinalProjectDbContext _context,IProductService _productService) : Controller
+public class CartController(PetPatFinalProjectDbContext _context, IProductService _productService) : Controller
 {
     public IActionResult Index()
     {
         BasketDto basket = GetBasket();
-
         return View(basket);
     }
+
     [HttpPost]
     public IActionResult AddToBasket(int productId, int quantity)
     {
-        // Məhsulu tapırıq
         var product = _context.Products.Find(productId);
         if (product == null)
         {
-            // Məhsul tapılmadısa, səhv yönləndirmə
             return RedirectToAction("Index", "Shop");
         }
 
-        // Səbətə məhsul əlavə edirik
-        var basket = GetBasket(); // Burada GetBasket() metodunu istifadə edirik
+        var basket = GetBasket();
         var basketItem = basket.Items.FirstOrDefault(i => i.Id == productId);
+
+        int availableStock = product.Quantity; 
 
         if (basketItem == null)
         {
+            if (quantity > availableStock)
+            {
+                quantity = availableStock; 
+            }
+
             basket.Items.Add(new BasketItemDto
             {
                 Id = productId,
                 Title = product.Title,
                 NewPrice = product.NewPrice,
                 OldPrice = product.OldPrice,
-                Quantity = 1,
-                ImageUrl= product.CoverImageUrl
+                Quantity = quantity > 0 ? quantity : 1,
+                ImageUrl = product.CoverImageUrl
             });
         }
         else
         {
-            // Məhsul artıq varsa, sayını artırırıq
-            basketItem.Quantity += quantity;  // Yeni miqdarı artırırıq
+            if (basketItem.Quantity + quantity > availableStock)
+            {
+                basketItem.Quantity = availableStock; 
+            }
+            else
+            {
+                basketItem.Quantity += quantity;
+            }
         }
 
-        // Yeni səbət məlumatlarını cookie-yə əlavə edirik
         var basketJson = JsonConvert.SerializeObject(basket);
         Response.Cookies.Append("Basket", basketJson, new CookieOptions
         {
@@ -58,11 +67,8 @@ public class CartController(PetPatFinalProjectDbContext _context,IProductService
             HttpOnly = true
         });
 
-        // Səbətə əlavə etdikdən sonra istifadəçini səbət səhifəsinə yönləndiririk
         return RedirectToAction("Index", "Cart");
     }
-
-
 
     public BasketDto GetBasket()
     {
@@ -71,20 +77,18 @@ public class CartController(PetPatFinalProjectDbContext _context,IProductService
         {
             BasketDto? existingBasket = JsonConvert.DeserializeObject<BasketDto>(basket);
             return existingBasket;
-
         }
         return new BasketDto();
     }
-
 	[HttpPost]
 	public IActionResult RemoveFromBasket(int productId)
 	{
-		var basket = GetBasket(); // Basketi əldə edirik
+		var basket = GetBasket();
 		var basketItem = basket.Items.FirstOrDefault(i => i.Id == productId);
 
 		if (basketItem != null)
 		{
-			basket.Items.Remove(basketItem); // Məhsulu silirik
+			basket.Items.Remove(basketItem); 
 
 			var basketJson = JsonConvert.SerializeObject(basket);
 			Response.Cookies.Append("Basket", basketJson, new CookieOptions
@@ -93,7 +97,9 @@ public class CartController(PetPatFinalProjectDbContext _context,IProductService
 				HttpOnly = true
 			});
 
-			decimal newTotalPrice = basket.Items.Sum(item => item.NewPrice.HasValue ? item.NewPrice.Value * item.Quantity : item.OldPrice.HasValue ? item.OldPrice.Value * item.Quantity : 0);
+			decimal newTotalPrice = basket.Items.Sum(item =>
+				item.NewPrice.HasValue ? item.NewPrice.Value * item.Quantity :
+				item.OldPrice.HasValue ? item.OldPrice.Value * item.Quantity : 0);
 
 			return Json(new { success = true, totalPrice = newTotalPrice });
 		}
@@ -103,38 +109,45 @@ public class CartController(PetPatFinalProjectDbContext _context,IProductService
 
 
 	[HttpPost]
-	public IActionResult UpdateQuantity(int productId, int quantity)
-	{
-		var basket = GetBasket(); // Basketi əldə edirik
-		var basketItem = basket.Items.FirstOrDefault(i => i.Id == productId);
+    public IActionResult UpdateQuantity(int productId, int quantity)
+    {
+        var basket = GetBasket();
+        var basketItem = basket.Items.FirstOrDefault(i => i.Id == productId);
+        var product = _context.Products.Find(productId);
 
-		if (basketItem != null && quantity > 0)  // Müsbət miqdar yoxlanır
-		{
-			basketItem.Quantity = quantity;
+        if (basketItem != null && product != null)
+        {
+            int availableStock = product.Quantity; 
 
-			// Basketi yeniləyirik
-			var basketJson = JsonConvert.SerializeObject(basket);
-			Response.Cookies.Append("Basket", basketJson, new CookieOptions
-			{
-				Expires = DateTime.Now.AddDays(7),
-				HttpOnly = true
-			});
+            if (quantity > availableStock)
+            {
+                quantity = availableStock; 
+            }
 
-			// Yeni ümumi qiyməti göndəririk
-			decimal newTotalPrice = basket.Items.Sum(item => item.NewPrice.HasValue ? item.NewPrice.Value * item.Quantity : item.OldPrice.HasValue ? item.OldPrice.Value * item.Quantity : 0);
+            basketItem.Quantity = quantity > 0 ? quantity : 1; 
 
-			// Hər bir məhsulun yeni qiymətini də döndəririk
-			var itemPrices = basket.Items.Select(item => new
-			{
-				itemId = item.Id,
-				itemTotal = item.NewPrice.HasValue ? item.NewPrice.Value * item.Quantity : item.OldPrice.HasValue ? item.OldPrice.Value * item.Quantity : 0
-			}).ToList();
+            var basketJson = JsonConvert.SerializeObject(basket);
+            Response.Cookies.Append("Basket", basketJson, new CookieOptions
+            {
+                Expires = DateTime.Now.AddDays(7),
+                HttpOnly = true
+            });
 
-			return Json(new { success = true, totalPrice = newTotalPrice, itemPrices });
-		}
+            decimal newTotalPrice = basket.Items.Sum(item =>
+                item.NewPrice.HasValue ? item.NewPrice.Value * item.Quantity :
+                item.OldPrice.HasValue ? item.OldPrice.Value * item.Quantity : 0);
 
-		return Json(new { success = false });
-	}
+            var itemPrices = basket.Items.Select(item => new
+            {
+                itemId = item.Id,
+                itemTotal = item.NewPrice.HasValue ? item.NewPrice.Value * item.Quantity :
+                            item.OldPrice.HasValue ? item.OldPrice.Value * item.Quantity : 0
+            }).ToList();
+
+            return Json(new { success = true, totalPrice = newTotalPrice, itemPrices, correctedQuantity = quantity });
+        }
+
+        return Json(new { success = false });
+    }
+
 }
-
-

@@ -1,19 +1,19 @@
 ﻿@model ICollection<GetAllAnimalDto>
+
 <!-- animal-area -->
 <section class="animal__area-three">
     <div class="container">
         <div class="row">
             <div class="col-xl-9 col-lg-8 order-0 order-lg-2">
-                    <div class="row">
-                @foreach (GetAllAnimalDto item in Model)
-                {
+                <div class="row">
+                    @foreach (GetAllAnimalDto item in Model)
+                    {
                         <div class="col-xl-4 col-md-6">
                             <div class="animal__item animal__item-two animal__item-three shine-animate-item">
                                 <div class="animal__thumb animal__thumb-two shine-animate">
                                     <a asp-controller="Pages" asp-action="PetDetails" asp-route-id="@item.Id">
-                                        <img src="~/uploads/animals/@item.CoverImageUrl" alt="img" style="width: 100%; height: auto;">
+                                        <img src="~/uploads/animals/@item.CoverImageUrl" alt="img" class="animal-image">
                                     </a>
-                                    <a href="animal-details.html" class="wishlist"><i class="flaticon-love"></i></a>
                                 </div>
                                 <div class="animal__content animal__content-two">
                                     <h4 class="title"><a href="animal-details.html">@item.Title</a></h4>
@@ -22,19 +22,28 @@
                                             <li>Gender: <span>@item.Gender</span></li>
                                         </ul>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-                }
-                    </div>
-
-                    
+                    }
+                </div>
             </div>
         </div>
-
-
     </div>
-
 </section>
 <!-- animal-area-end -->
+
+<style>
+    .animal__thumb {
+        position: relative;
+        width: 100%;
+        height: 250px; /* Konteynerin hündürlüyünü təyin et */
+        overflow: hidden; /* Kəsilməni önləmək */
+    }
+
+    .animal-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Şəkilin ölçüsünü konteynerə uyğunlaşdırır */
+    }
+</style>

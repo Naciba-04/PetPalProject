@@ -32,34 +32,29 @@
 												<h6 class="text-muted">@item.Title</h6>
 											</div>
 											<div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-												<!-- Minus düyməsi -->
 												<button onclick="changeQuantity(@item.Id, -1)">
 													<i class="fas fa-minus"></i>
 												</button>
 
-												<!-- Input ilə miqdar -->
 												<input id="quantity_@item.Id" min="0" name="quantity" value="@item.Quantity" type="number"
 													   class="form-control form-control-sm" onchange="updateQuantity(@item.Id, this.value)" />
 
-												<!-- Plus düyməsi -->
 												<button onclick="changeQuantity(@item.Id, 1)">
 													<i class="fas fa-plus"></i>
 												</button>
 											</div>
 
 
-											<!-- Total Price for the specific product -->
 											<div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
 												<h6 class="mb-0 new-price">
-													<!-- Total price for this product -->
 													
 													@if (item.NewPrice.HasValue)
 													{
-														<span>@(item.NewPrice.Value * item.Quantity)</span> <!-- Total for this product -->
+														<span>@(item.NewPrice.Value * item.Quantity)</span> 
 													}
 													else if (item.OldPrice.HasValue)
 													{
-														<span>@(item.OldPrice.Value * item.Quantity)</span> <!-- Total for this product -->
+														<span>@(item.OldPrice.Value * item.Quantity)</span> 
 													}
 													else
 													{
@@ -74,9 +69,6 @@
 											</div>
 										</div>
 									}
-
-
-
 									<hr class="my-4">
 
 									<div class="pt-5">
@@ -102,7 +94,7 @@
 
 									<div class="d-flex justify-content-between mb-5">
 										<h5 class="text-uppercase">Total price</h5>
-										<h5 id="totalPrice">AZN @Model.TotalPrice</h5> <!-- Burada ümumi qiymət göstərilir -->
+										<h5 id="totalPrice">AZN @Model.TotalPrice</h5> 
 									</div>
 
 
@@ -121,28 +113,18 @@
 
 <script>
 	function updateQuantity(productId, quantity) {
-		// Müəyyən olunmuş məhsul və miqdarı backend-ə göndəririk
 		fetch('/Cart/UpdateQuantity', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/x-www-form-urlencoded'
 			},
-			body: `productId=${productId}&quantity=${quantity}`  // Düzgün sintaksis
-				
-
+			body: `productId=${productId}&quantity=${quantity}`
 		})
-			.then(response => {
-				if (!response.ok) {
-					throw new Error('Məhsul sayını dəyişdirmək mümkün olmadı');
-				}
-				return response.json();
-			})
+			.then(response => response.json())
 			.then(data => {
 				if (data.success) {
-					// Serverdən yeni ümumi qiymət gəldi, bunu səhifədə yeniləyirik
 					document.querySelector("#totalPrice").textContent = `AZN ${data.totalPrice.toFixed(2)}`;
 
-					// Hər bir məhsulun yeni qiymətini yeniləyirik
 					data.itemPrices.forEach(itemPrice => {
 						const itemRow = document.querySelector(`#productRow_${itemPrice.itemId}`);
 						if (itemRow) {
@@ -150,8 +132,13 @@
 							totalPriceElement.textContent = itemPrice.itemTotal.toFixed(2);
 						}
 					});
+
+					const quantityInput = document.querySelector(`#quantity_${productId}`);
+					if (data.correctedQuantity !== undefined) {
+						quantityInput.value = data.correctedQuantity;
+					}
 				} else {
-					alert('Qəbul edilən say müsbət olmalıdır.');
+					alert('Məhsul sayı stokdan çox ola bilməz!');
 				}
 			})
 			.catch(error => {
@@ -159,12 +146,10 @@
 				alert('Xəta baş verdi!');
 			});
 	}
-
 	function removeFromBasket(productId) {
-		// Məhsulun satırını tapırıq
 		const productRow = document.querySelector(`#productRow_${productId}`);
 		if (productRow) {
-			productRow.remove();  // Məhsulun satırını silirik
+			productRow.remove();  
 		}
 
 		fetch('/Cart/RemoveFromBasket', {
@@ -172,12 +157,11 @@
 			headers: {
 				'Content-Type': 'application/x-www-form-urlencoded'
 			},
-			body: `productId=${productId}`  // Məhsul ID-sini göndəririk
+			body: `productId=${productId}`
 		})
 			.then(response => response.json())
 			.then(data => {
 				if (data.success) {
-					// Ümumi qiyməti yeniləyirik
 					document.querySelector("#totalPrice").textContent = `AZN ${data.totalPrice.toFixed(2)}`;
 					alert('Məhsul silindi!');
 				} else {
@@ -189,30 +173,26 @@
 				alert("Xəta baş verdi!");
 			});
 	}
-	// `+` və `-` düymələri ilə miqdarı dəyişdirmək üçün
-	function changeQuantity(productId, change) {
-		// `quantity` inputunun mövcud dəyərini alırıq
-		const quantityInput = document.querySelector(`#quantity_${productId}`);
-		let newQuantity = parseInt(quantityInput.value) + change; // Dəyəri artırır və ya azaldırıq
 
-		if (newQuantity < 0) {
-			newQuantity = 0; // Negativ dəyərin qarşısını alırıq
+
+	function changeQuantity(productId, change) {
+		const quantityInput = document.querySelector(`#quantity_${productId}`);
+		let newQuantity = parseInt(quantityInput.value) + change;
+
+		if (newQuantity < 1) {
+			newQuantity = 1; 
 		}
 
-		// Yeni qiyməti inputa təyin edirik
 		quantityInput.value = newQuantity;
-
-		// Yeni miqdarı backend-ə göndəririk
 		updateQuantity(productId, newQuantity);
 	}
-
-
 </script>
+
 <style>
 	input[type="number"] {
-		width: 70px; /* Input sahəsinin genişliyini artırdıq */
-		font-size: 16px; /* Font ölçüsünü düzəltdik ki, uzun rəqəmlər tam görünsün */
-		text-align: center; /* Rəqəmləri ortada yerləşdirmək üçün */
+		width: 70px; 
+		font-size: 16px; 
+		text-align: center; 
 	}
 
 </style>

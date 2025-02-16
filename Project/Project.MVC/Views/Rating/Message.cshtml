@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Şərh Bölməsi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,24 +29,37 @@
             background: white;
             text-align: center;
             position: relative;
-            top: -50px; /* Burada elementi bir az yuxarı qaldırdım */
+            top: -50px;
         }
 
         .message {
-            background-color: #e3f2fd; /* Açıq mavi fon */
-            color: #1565c0; /* Tünd mavi yazı */
+            background-color: #e3f2fd;
+            color: #1565c0;
             font-weight: bold;
             padding: 15px;
             border-radius: 8px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             min-height: 60px;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border: 1px solid #90caf9;
-            line-height: 1.5; /* Sətirlər arası məsafə */
+            line-height: 1.5;
+            padding-right: 15px;
         }
+
+            .message a {
+                text-decoration: none;
+                color: #1565c0;
+                font-size: 22px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+                .message a:hover {
+                    color: #0d47a1;
+                }
 
         textarea {
             width: 100%;
@@ -81,7 +95,10 @@
 
     <div class="container">
         <div id="message" class="message">
-            <span style="text-align: center; display: block; width: 100%;">Zəhmət olmasa qeydiyyatdan keçib, sonra yorum yazın.</span>
+            <span>Zəhmət olmasa qeydiyyatdan keçib, sonra yorum yazın.</span>
+            <a id="register-link">
+                <i class="fa-solid fa-user"></i>
+            </a>
         </div>
 
         <div id="comment-section">
@@ -91,13 +108,18 @@
     </div>
 
     <script>
-        // İstifadəçinin qeydiyyatdan keçdiyini yoxlayan dəyişən
-        let isRegistered = false; // Burada true etsəniz, şərh hissəsi açılacaq
+        let isRegistered = false;
 
+        // Əgər qeydiyyatdan keçmişdirsə, mesaj gizlənir, şərh bölməsi açılır
         if (isRegistered) {
             document.getElementById('message').style.display = 'none';
             document.getElementById('comment-section').style.display = 'block';
         }
+
+        // Register ikonuna klik edildikdə "Register" səhifəsinə yönləndir
+        document.getElementById("register-link").addEventListener("click", function () {
+            window.location.href = "/Account/Register";
+        });
     </script>
 
 </body>

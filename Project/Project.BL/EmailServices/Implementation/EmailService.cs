@@ -84,7 +84,7 @@ public class EmailService(IConfiguration _configuration) : IEmailService
         MailMessage message = new MailMessage(from, to);
 
 
-        message.Subject = "You have come to our restaurant";
+        message.Subject = "You have come to our petpal";
         message.IsBodyHtml = true;
 
         message.Body = "Xoş gəlmişsiniz🎉";

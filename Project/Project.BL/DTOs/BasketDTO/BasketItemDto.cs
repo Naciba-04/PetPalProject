@@ -14,7 +14,6 @@ public class BasketItemDto
 	public string Description { get; set; }
 	public decimal? NewPrice { get; set; }
 	public decimal? OldPrice { get; set; } 
-
 	public double Price
 	{
 		get
@@ -34,10 +33,7 @@ public class BasketItemDto
 			return 0;  
 		}
 	}
-
 	public string ImageUrl { get; set; }
-	public Department Department { get; set; }
-	public int DepartmentId { get; set; }
 	public int Quantity { get; set; }
 }
 

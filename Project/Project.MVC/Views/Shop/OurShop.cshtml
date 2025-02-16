@@ -8,13 +8,9 @@
                     <div class="product__item">
                         <div class="product__thumb">
                             <a asp-controller="Shop" asp-action="ShopDetails" asp-route-id="@item.Id">
-                                <img src="~/uploads/products/@item.CoverImageUrl" alt="img" style="width: 100%; height: auto;">
+                                <img src="~/uploads/products/@item.CoverImageUrl" alt="img" class="product-image">
                             </a>
-                            <div class="product__action">
-                                <a href="product-details.html"><i class="flaticon-love"></i></a>
-                                <a href="product-details.html"><i class="flaticon-loupe"></i></a>
-                                <a href="product-details.html"><i class="flaticon-exchange"></i></a>
-                            </div>
+                           
                             <div class="sale-wrap">
                                 <span>New</span>
                             </div>
@@ -45,9 +41,9 @@
 </section>
 
 <style>
-    .product__thumb img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
+    .product-image {
+        width: 100%; /* Şəkilin genişliyini konteynerə uyğunlaşdırır */
+        height: 250px; /* Hündürlüyü müəyyən edir */
+        object-fit: cover; /* Şəkili düzgün kəsərək konteynerə uyğunlaşdırır */
     }
 </style>

@@ -57,8 +57,6 @@ public class ReservationController(IReservationService _reservationService, IEma
         {
             _emailService.SendRejectedEmail(reservation.Email);
         }
-       
-
 
         return RedirectToAction("Index");
     }

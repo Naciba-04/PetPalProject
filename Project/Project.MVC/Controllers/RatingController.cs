@@ -37,7 +37,7 @@ public class RatingController(PetPatFinalProjectDbContext _context, UserManager<
         await _context.Ratings.AddAsync(rating);
         await _context.SaveChangesAsync();
 
-        return RedirectToAction("Index", "Home");
+        return RedirectToAction("CommentDetails", "Pages");
     }
     public IActionResult Message()
     {

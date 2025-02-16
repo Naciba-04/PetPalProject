@@ -119,12 +119,5 @@ public class AnimalController(IAnimalService _animalService,IMapper _mapper) : C
 			return BadRequest(ex.Message);
 		}
 	}
-
-
-
-
-
-
-
 }
 
