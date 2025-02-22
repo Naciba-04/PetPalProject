@@ -21,8 +21,11 @@ public class PetPatFinalProjectDbContext : IdentityDbContext<AppUser>
 	public DbSet<PetService> PetServices { get; set; }
 	public DbSet<Animal> Animals { get; set; }
 	public DbSet<Adoption> Adoptions { get; set; }
+    public DbSet<Worker> Workers { get; set; }
+    public DbSet<WorkerDepartment> WorkerDepartments { get; set; }
 
-	public PetPatFinalProjectDbContext(DbContextOptions options) : base(options)
+
+    public PetPatFinalProjectDbContext(DbContextOptions options) : base(options)
 	{
 	}
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
