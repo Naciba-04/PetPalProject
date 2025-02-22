@@ -6416,5 +6416,21 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\88119f78-b15d-4075-a2af-3588b81e463aR.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\workers\3830ebe9-5568-4d61-bccf-156e00d39b86c9c5ea19-3f99-4bfe-acaa-8fedd391ae0d.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Project.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Project.MVC</BasePath>
+      <RelativePath>uploads/workers/3830ebe9-5568-4d61-bccf-156e00d39b86c9c5ea19-3f99-4bfe-acaa-8fedd391ae0d.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\workers\3830ebe9-5568-4d61-bccf-156e00d39b86c9c5ea19-3f99-4bfe-acaa-8fedd391ae0d.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
   </ItemGroup>
 </Project>

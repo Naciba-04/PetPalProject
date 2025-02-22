@@ -1,0 +1,33 @@
+﻿@model Worker
+<!-- Begin Page Content -->
+<div class="container">
+	<div class="card shadow mb-4">
+		<div class="card-header py-3">
+			<h6 class="m-0 font-weight-bold text-primary">Workers Details</h6>
+		</div>
+		<div class="card-body">
+			<p>Id: @Model.Id</p>
+			<p>FullName: @Model.FullName</p>
+			<p>DepartmentName: @Model.WorkerDepartment.Name</p>
+			<p>DepartmentId: @Model.WorkerDepartment.Id</p>
+			<p>Create Time: @Model.CreatedTime</p>
+			@if (Model.UpdatedTime is not null)
+			{
+				<p>Update Time: @Model.UpdatedTime</p>
+			}
+			<p><strong>Product Image:</strong></p>
+			<div class="animal-image">
+				@if (!string.IsNullOrEmpty(Model.ProfileImageUrl))
+				{
+					<img src="~/uploads/workers/@Model.ProfileImageUrl" alt="Product Image" style="max-width: 300px; height: auto; display: block; margin: 0 auto;" />
+				}
+				else
+				{
+					<p>No image available</p>
+				}
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- /.container-fluid -->

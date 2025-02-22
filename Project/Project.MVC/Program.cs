@@ -47,6 +47,8 @@ namespace Project.MVC
             builder.Services.AddScoped<IGenericRepository<Reservation>, GenericRepository<Reservation>>();
             builder.Services.AddScoped<IGenericRepository<Animal>, GenericRepository<Animal>>();
             builder.Services.AddScoped<IGenericRepository<Adoption>, GenericRepository<Adoption>>();
+            builder.Services.AddScoped<IGenericRepository<Worker>, GenericRepository<Worker>>();
+            builder.Services.AddScoped<IGenericRepository<WorkerDepartment>, GenericRepository<WorkerDepartment>>();
 
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IDepartmentService, DepartmentService>();
@@ -57,6 +59,9 @@ namespace Project.MVC
             builder.Services.AddScoped<IReservationService, ReservationService>();
             builder.Services.AddScoped<IAnimalService, AnimalService>();
             builder.Services.AddScoped<IAdoptionService, AdoptionService>();
+            builder.Services.AddScoped<IWorkerService, WorkerService>();
+            builder.Services.AddScoped<IWorkerDepartmentService, WorkerDepartmentService>();
+
 
             builder.Services.AddValidatorsFromAssemblyContaining<CreateProductDtoValidation>();
 

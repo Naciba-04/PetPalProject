@@ -1,0 +1,38 @@
+﻿@model WorkerDepartment
+<!-- Begin Page Content -->
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Department Details</h6>
+        </div>
+        <div class="card-body">
+            <p>Id:@Model.Id </p>
+            <p>Create Time:@Model.CreatedTime </p>
+            <p>Name:@Model.Name </p>
+        </div>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">CoverImage</th>
+            <th scope="col">FullName</th>
+            <th scope="col">WorkerDepartmentId</th>
+            <th scope="col">CreateTime</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Worker item in Model.Workers)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td> <img width="50" src="~/uploads/workers/@item.ProfileImageUrl"> </td>
+                <td>@item.FullName</td>
+                <td>@item.WorkerDepartmentId</td>
+                <td>@item.CreatedTime</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

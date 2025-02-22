@@ -60,10 +60,10 @@ public class EmailService(IConfiguration _configuration) : IEmailService
         MailMessage message = new MailMessage(from, to);
 
 
-        message.Subject = "Başvurunuz için Teşekkürler";
+        message.Subject = "Thank you for your application";
         message.IsBodyHtml = true;
 
-        message.Body = "Sizinle elaqeye kecheceyik";
+        message.Body = "We will contact you";
         smtp.Send(message);
     }
     public void SendConfirmEmail(string toUser, string confirmUrl)

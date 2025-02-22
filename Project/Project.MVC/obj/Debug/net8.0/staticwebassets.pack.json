@@ -1605,6 +1605,10 @@
       "PackagePath": "staticwebassets\\uploads\\products\\88119f78-b15d-4075-a2af-3588b81e463aR.jpg"
     },
     {
+      "Id": "C:\\Users\\resul\\Desktop\\PetPalProject\\Project\\Project.MVC\\wwwroot\\uploads\\workers\\3830ebe9-5568-4d61-bccf-156e00d39b86c9c5ea19-3f99-4bfe-acaa-8fedd391ae0d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\workers\\3830ebe9-5568-4d61-bccf-156e00d39b86c9c5ea19-3f99-4bfe-acaa-8fedd391ae0d.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Project.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

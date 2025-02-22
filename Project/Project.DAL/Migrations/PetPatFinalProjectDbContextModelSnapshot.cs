@@ -541,6 +541,70 @@ namespace Project.DAL.Migrations
                     b.ToTable("Reservations");
                 });
 
+            modelBuilder.Entity("Project.Core.Model.Worker", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ProfileImageUrl")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<DateTime?>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("WorkerDepartmentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("WorkerDepartmentId");
+
+                    b.ToTable("Workers");
+                });
+
+            modelBuilder.Entity("Project.Core.Model.WorkerDepartment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<DateTime?>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("WorkerDepartments");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -633,6 +697,17 @@ namespace Project.DAL.Migrations
                     b.Navigation("PetType");
                 });
 
+            modelBuilder.Entity("Project.Core.Model.Worker", b =>
+                {
+                    b.HasOne("Project.Core.Model.WorkerDepartment", "WorkerDepartment")
+                        .WithMany("Workers")
+                        .HasForeignKey("WorkerDepartmentId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("WorkerDepartment");
+                });
+
             modelBuilder.Entity("Project.Core.Model.AppUser", b =>
                 {
                     b.Navigation("Ratings");
@@ -651,6 +726,11 @@ namespace Project.DAL.Migrations
             modelBuilder.Entity("Project.Core.Model.PetType", b =>
                 {
                     b.Navigation("Reservations");
+                });
+
+            modelBuilder.Entity("Project.Core.Model.WorkerDepartment", b =>
+                {
+                    b.Navigation("Workers");
                 });
 #pragma warning restore 612, 618
         }
