@@ -24,10 +24,10 @@ public class EmailService(IConfiguration _configuration) : IEmailService
         MailMessage message = new MailMessage(from, to);
 
 
-        message.Subject = "Reserviniz qebul olundu 🎉";
+        message.Subject = "Your reservation has been accepted🎉";
         message.IsBodyHtml = true;
 
-        message.Body = "Bizi sechdiyiniz uchun tesekkurler";
+        message.Body = "Thank you for choosing us";
         smtp.Send(message);
     }
     public void SendRejectedEmail(string toUser)
@@ -42,10 +42,10 @@ public class EmailService(IConfiguration _configuration) : IEmailService
         MailMessage message = new MailMessage(from, to);
 
 
-        message.Subject = "Reserv etdiyiniz yer doludur";
+        message.Subject = "The reserve is full on the ground.";
         message.IsBodyHtml = true;
 
-        message.Body = "Diger yerlere bash dura bilersiniz";
+        message.Body = "You can visit other places";
         smtp.Send(message);
     }
     public void ReservMessage(string toUser)
@@ -87,7 +87,7 @@ public class EmailService(IConfiguration _configuration) : IEmailService
         message.Subject = "You have come to our petpal";
         message.IsBodyHtml = true;
 
-        message.Body = "Xoş gəlmişsiniz🎉";
+        message.Body = "You are welcome🎉";
         smtp.Send(message);
     }
 
@@ -103,10 +103,10 @@ public class EmailService(IConfiguration _configuration) : IEmailService
         MailMessage message = new MailMessage(from, to);
 
 
-        message.Subject = "Başvurunuz için Teşekkürler";
+        message.Subject = "Thank you for your application";
         message.IsBodyHtml = true;
 
-        message.Body = "Sizinle elaqeye kecheceyik";
+        message.Body = "We will contact you.";
         smtp.Send(message);
     }
 
@@ -122,10 +122,10 @@ public class EmailService(IConfiguration _configuration) : IEmailService
         MailMessage message = new MailMessage(from, to);
 
 
-        message.Subject = "Başvurunuz için Teşekkürler";
+        message.Subject = "Thank you for your application";
         message.IsBodyHtml = true;
 
-        message.Body = "Siz heyvani sahiblendiniz";
+        message.Body = "You own the animal.";
         smtp.Send(message);
     }
 
@@ -141,10 +141,10 @@ public class EmailService(IConfiguration _configuration) : IEmailService
         MailMessage message = new MailMessage(from, to);
 
 
-        message.Subject = "Başvurunuz için Teşekkürler";
+        message.Subject = "Thank you for your application";
         message.IsBodyHtml = true;
 
-        message.Body = "Efsuski qeydiniz legv olunurdu";
+        message.Body = "Sorry,your registration was being canceled";
         smtp.Send(message);
     }
 }

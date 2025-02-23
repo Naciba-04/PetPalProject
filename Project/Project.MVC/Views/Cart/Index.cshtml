@@ -138,12 +138,12 @@
 						quantityInput.value = data.correctedQuantity;
 					}
 				} else {
-					alert('Məhsul sayı stokdan çox ola bilməz!');
+					alert('The number of products cannot exceed the stock!');
 				}
 			})
 			.catch(error => {
-				console.error('Xəta:', error);
-				alert('Xəta baş verdi!');
+				console.error('Error:', error);
+				alert('An error occurred!');
 			});
 	}
 	function removeFromBasket(productId) {
@@ -163,14 +163,14 @@
 			.then(data => {
 				if (data.success) {
 					document.querySelector("#totalPrice").textContent = `AZN ${data.totalPrice.toFixed(2)}`;
-					alert('Məhsul silindi!');
+					alert('Product deleted!');
 				} else {
-					alert("Məhsul silinə bilmədi!");
+					alert("Product could not be deleted!");
 				}
 			})
 			.catch(error => {
-				console.error("Xəta baş verdi:", error);
-				alert("Xəta baş verdi!");
+				console.error("An error occurred:", error);
+				alert("An error occurred!");
 			});
 	}
 
